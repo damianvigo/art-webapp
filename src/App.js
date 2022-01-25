@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { GlobalStyle } from './components/CreateGlobalStyle';
+import Home from './pages/Home';
+import Conoceme from './pages/Conoceme';
+import MisObras from './pages/MisObras';
+import Contacto from './pages/Contacto';
+import Error404 from './pages/Error404';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/conoceme" element={<Conoceme />} />
+          <Route path="/mis-obras" element={<MisObras />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+      </HashRouter>
+    </>
   );
 }
 

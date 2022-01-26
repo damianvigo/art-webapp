@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 const NavStyled = styled.nav`
@@ -14,8 +16,8 @@ const NavStyled = styled.nav`
   transition: opacity 0.5s ease;
 
   a {
-    padding: 1.6rem;
-    font-size: 2.4rem;
+    padding: 1rem;
+    font-size: var(--step-0);
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -43,6 +45,10 @@ const NavStyled = styled.nav`
         color: var(--white-color);
         background-color: transparent;
       }
+      &.active {
+        color: var(--white-color);
+        font-weight: bold;
+      }
       &:last-child {
         padding-right: 0;
       }
@@ -50,13 +56,32 @@ const NavStyled = styled.nav`
   }
 `;
 
-const Nav = ({ showNavMenu }) => {
+const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
+  let btnMenu = useRef();
+
+  const closeMenu = (e) => {
+    if (btnMenu) {
+      setChangeBtn(!showChangeBtn);
+    }
+  };
+
   return (
-    <NavStyled className={`${showNavMenu && 'is-active'}`}>
-      <NavLink to="/">Inicio</NavLink>
-      <NavLink to="/conoceme">Conoceme</NavLink>
-      <NavLink to="/mis-obras">Mis obras</NavLink>
-      <NavLink to="/contacto">Contacto</NavLink>
+    <NavStyled ref={btnMenu} className={`${showNavMenu && 'is-active'}`}>
+      <Link onClick={closeMenu} activeClass="active" to="conoceme" offset={-50}>
+        Conoceme
+      </Link>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'active' : '')}
+        to="/mis-obras"
+      >
+        Mis obras
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'active' : '')}
+        to="/contacto"
+      >
+        Contacto
+      </NavLink>
     </NavStyled>
   );
 };

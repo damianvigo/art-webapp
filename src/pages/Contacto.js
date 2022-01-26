@@ -1,8 +1,13 @@
+import Header from '../components/Header';
+
 const Contacto = () => {
   return (
-    <div>
-      <h2>Contacto</h2>
-    </div>
+    <>
+      <Header />
+      <main>
+        <h1>Contacto</h1>
+      </main>
+    </>
   );
 };
 

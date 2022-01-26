@@ -1,13 +1,22 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 :root {
+    /* @link https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+  --step--2: clamp(0.91rem, 0.89rem + 0.09vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.06rem + 0.19vw, 1.20rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.34vw, 1.50rem);
+  --step-1: clamp(1.58rem, 1.47rem + 0.55vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.73rem + 0.83vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.03rem + 1.20vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.38rem + 1.71vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.79rem + 2.39vw, 4.58rem);
   --first-color: #e0aaff;
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --first-alpha-color: #e0aaff40;
   --second-color: #10002b;
-  --second-alpha-color: #cddafd75;
-  --third-color: #501464;
-  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --second-alpha-color: #10002b75;
+  --third-color: #c77dff;
+  --third-alpha-color: #c77dff45;
   --white-color: #fff;
   --gray-light-color: #f3f3f3;
   --gray-color: #ccc;
@@ -18,16 +27,17 @@ export const GlobalStyle = createGlobalStyle`
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --font: "Raleway", sans-serif;
+  --active: #e0aaff;
+  --font: 'Playfair Display', serif;
   --max-width: 1200px;
-  --header-height: 6.4rem;
+  --header-height: 4rem;
 }
 
 /* Reset */
 html {
   box-sizing: border-box;
   font-family: var(--font);
-  font-size: 62.5%;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -44,8 +54,8 @@ body {
 }
 
 a {
-  color: var(--link-color);
-  font-size: 1.5rem;
+  /* color: var(--link-color); */
+  /* font-size: 1.5rem; */
   transition: all 0.5s ease-out;
 }
 
@@ -55,47 +65,94 @@ a:hover {
 
 h1 {
   margin: 0;
-  font-size: 3.2rem;
+  font-size: var(--step-5);
 }
 
 h2 {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: var(--step-4);
 }
 
 h3 {
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--step-3);
 }
 
 h4 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: var(--step-2);
 }
 
 h5 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: var(--step-1);
 }
 
 h6 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: var(--step-0);
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
 }
 
-p {
-  line-height: 2.6rem;
-  font-size: 1.6rem;
+figure {
+  margin: 0;
 }
 
-small, b {
-  font-size: 1.4rem;
+/* line-height: 2.6rem; */
+
+p {
+  
+  font-size: var(--step-0);
 }
+
+
+
+/* small, b {
+  font-size: 1.4rem;
+} */
+
+.step--2 {
+    font-size: var(--step--2);
+}
+
+.step--1 {
+    font-size: var(--step--1);
+}
+
+.step-0 {
+    /* h6 */
+    font-size: var(--step-0);
+}
+
+.step-1 {
+    /* h5 */
+    font-size: var(--step-1);
+}
+
+.step-2 {
+    /* h4 */
+    font-size: var(--step-2);
+}
+
+.step-3 {
+    /* h3 */
+    font-size: var(--step-3);
+}
+
+.step-4 {
+    /* h2 */
+    font-size: var(--step-4);
+}
+
+.step-5 {
+    /* h1 */
+    font-size: var(--step-5);
+}
+
 
 /* Utilities */
 .box-shadow-1 {
@@ -111,5 +168,42 @@ small, b {
 .none {
     display: none;
 }
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .text-lg-center {
+  text-align: center;
+}
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+
+}
+
 
 `;

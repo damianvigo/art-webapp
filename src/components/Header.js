@@ -9,7 +9,7 @@ const HeaderStyled = styled.header`
   left: 0;
   bottom: 0;
   z-index: 999;
-  padding: 1.6rem;
+  padding: 0.5rem;
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
@@ -26,6 +26,7 @@ const HeaderStyled = styled.header`
   @media screen and (min-width: 1024px) {
     position: sticky;
     top: 0;
+    height: calc(var(--header-height) - 1rem);
   }
 `;
 
@@ -33,7 +34,7 @@ const Logo = styled.div`
   a {
     color: var(--first-color);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: var(--step-0);
     text-decoration: none;
   }
 `;
@@ -41,6 +42,7 @@ const Logo = styled.div`
 const Header = () => {
   const [showChangeBtn, setChangeBtn] = useState(false);
   const showNavMenu = showChangeBtn;
+
   return (
     <HeaderStyled>
       <section className="container">
@@ -51,7 +53,11 @@ const Header = () => {
           showChangeBtn={showChangeBtn}
           setChangeBtn={setChangeBtn}
         />
-        <Nav showNavMenu={showNavMenu} />
+        <Nav
+          showChangeBtn={showChangeBtn}
+          setChangeBtn={setChangeBtn}
+          showNavMenu={showNavMenu}
+        />
       </section>
     </HeaderStyled>
   );

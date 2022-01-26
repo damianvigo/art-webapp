@@ -1,7 +1,10 @@
+import HeroImage from './HeroImage';
+import Btn from './Btn';
+
 const Main = () => {
   return (
     <main>
-      <h2>Principal</h2>
+      <HeroImage />
     </main>
   );
 };

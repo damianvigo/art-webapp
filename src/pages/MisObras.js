@@ -1,8 +1,14 @@
+import styled from 'styled-components';
+import Header from '../components/Header';
+
 const MisObras = () => {
   return (
-    <div>
-      <h1>Mis obras</h1>
-    </div>
+    <>
+      <Header />
+      <main>
+        <h1>Mis Obras</h1>
+      </main>
+    </>
   );
 };
 

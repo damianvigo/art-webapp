@@ -49,16 +49,15 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
 }
-
+ /*
 a {
-  /* color: var(--link-color); */
-  /* font-size: 1.5rem; */
-  transition: all 0.5s ease-out;
-}
+  color: var(--link-color);
+   font-size: 1.5rem;
+    transition: all 0.5s ease-out;
 
 a:hover {
   opacity: 0.75;
-}
+} */
 
 h1 {
   margin: 0;

@@ -15,16 +15,23 @@ const CardsHomeSection = styled.section`
 const CardsHome = styled.section`
   text-align: center;
   article {
-    margin: 2rem 0;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 2rem auto;
     border: thin solid var(--black-color);
   }
   img {
     width: 100%;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
   }
 
   @media screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 45%);
     justify-content: space-around;
     align-content: center;
     img {
@@ -34,7 +41,6 @@ const CardsHome = styled.section`
       object-position: left top;
     }
     img:hover {
-      opacity: 0.75;
     }
     h3 {
       grid-column: span 2;

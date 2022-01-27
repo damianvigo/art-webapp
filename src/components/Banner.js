@@ -19,10 +19,12 @@ const BanerStyledOpacity = styled.div`
 `;
 
 const BannerStyledContainer = styled.div`
+  width: 80vw;
+  text-align: center;
+
   p {
     color: var(--white-color);
     font-size: var(--step-1);
-    padding: 0 1rem;
   }
 `;
 

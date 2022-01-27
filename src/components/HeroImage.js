@@ -6,7 +6,7 @@ const HeroImageStyled = styled.article`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 60%;
   background-attachment: fixed;
 `;
 
@@ -43,7 +43,9 @@ const HeroImage = () => {
       <HeroImageStyled>
         <HeroImageOpacity>
           <HeroImageContent>
-            <HeroImageTitle>¡Hola! Soy Adriana Stigliano</HeroImageTitle>
+            <HeroImageTitle className="box-shadow-down">
+              ¡Hola! Soy Adriana Stigliano
+            </HeroImageTitle>
             <HeroImageSubtitle>Artista Plástica</HeroImageSubtitle>
             <Btn />
           </HeroImageContent>

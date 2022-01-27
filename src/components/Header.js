@@ -32,10 +32,28 @@ const HeaderStyled = styled.header`
 
 const Logo = styled.div`
   a {
-    color: var(--first-color);
-    font-weight: bold;
+    background: #f4c4f3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #fc67fa,
+      #f4c4f3
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #fc67fa,
+      #f4c4f3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-size: var(--step-0);
     text-decoration: none;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 `;
 

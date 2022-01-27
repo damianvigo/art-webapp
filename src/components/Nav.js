@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { NavLink, useLocation, Link as LinkRouter } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
@@ -65,11 +65,39 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
     }
   };
 
+  const path = useLocation();
+  const { pathname } = path;
+  console.log(pathname);
+
+  /* useEffect(() => {
+    const { pathname } = path;
+    console.log(pathname);
+  }, [path]); */
+
   return (
     <NavStyled ref={btnMenu} className={`${showNavMenu && 'is-active'}`}>
-      <Link onClick={closeMenu} activeClass="active" to="conoceme" offset={-50}>
+      {pathname === '/' ? (
+        <Link
+          onClick={closeMenu}
+          activeClass="active"
+          to="conoceme"
+          offset={-50}
+        >
+          Conoceme
+        </Link>
+      ) : (
+        <NavLink
+          className={({ isActive }) => (isActive ? 'active' : '')}
+          to="/"
+        >
+          Conoceme
+        </NavLink>
+      )}
+
+      {/*   <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
         Conoceme
-      </Link>
+      </NavLink> */}
+
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/mis-obras"

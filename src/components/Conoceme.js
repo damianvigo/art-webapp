@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import adri from '../assets/img/adri-perfil-1.jpg';
+import ragnar from '../assets/img/resplandor.jpg';
 
 const ConocemeStyledBackground = styled.div`
   background-color: var(--third-alpha-color);
@@ -11,6 +12,32 @@ const ConocemeStyledBackground = styled.div`
 `;
 
 const ConocemeStyled = styled.article``;
+
+const FlipCard = styled.div`
+  position: relative;
+  width: 100%;
+  height: 250px;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+  perspective: 10rem;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+`;
+
+const FlipFace = styled.figure`
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  backface-visibility: hidden;
+  img {
+    filter: brightness(1.2);
+  }
+`;
 
 const ConocemeSectionStyled = styled.section`
   @media screen and (min-width: 768px) {
@@ -53,9 +80,14 @@ const Conoceme = () => {
           </p>
         </ConocemeStyled>
         <article>
-          <figure>
-            <img src={adri} alt="Adriana Stigliano" />
-          </figure>
+          <FlipCard>
+            <FlipFace className="flip-face flip-front">
+              <img src={adri} alt="Adriana Stigliano" />
+            </FlipFace>
+            <FlipFace className="flip-face flip-back">
+              <img src={ragnar} alt="Adriana Stigliano" />
+            </FlipFace>
+          </FlipCard>
         </article>
         <article>
           <p>

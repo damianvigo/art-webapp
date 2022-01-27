@@ -75,7 +75,7 @@ h3 {
 }
 
 h4 {
-  margin: 0;
+  margin: var(--step--1);
   font-size: var(--step-2);
 }
 
@@ -191,6 +191,14 @@ p {
     min-height: 100vh;
   }
 
+}
+
+.flip-front {
+  transform: rotateY(0deg);
+}
+
+.flip-back {
+  transform: rotateY(180deg);
 }
 
 

@@ -23,9 +23,7 @@ const CardsHome = styled.section`
   }
   img {
     width: 100%;
-    transition: transform 0.5s ease;
     &:hover {
-      transform: scale(1.1, 1.1);
     }
   }
 
@@ -38,7 +36,6 @@ const CardsHome = styled.section`
       height: 400px;
       object-fit: cover;
       object-position: 50% 50%;
-      object-position: left top;
     }
     img:hover {
     }
@@ -60,29 +57,23 @@ const PinturasHome = () => {
         <article className="box-shadow-card">
           <a href="">
             <figure>
-              <img src={tango} alt="" />
+              <img src={ragnar} alt="" />
             </figure>
           </a>
-          <h4>Titutlo</h4>
+          <h4>Ragnar</h4>
           <CardsHomeDescription>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            tempore quaerat, incidunt consectetur alias labore perspiciatis illo
-            reiciendis, voluptas id explicabo a ea iure consequatur architecto,
-            ducimus deleniti enim rem.
+            Oleo sobre tela. 80 x 70cm
           </CardsHomeDescription>
         </article>
         <article className="box-shadow-card">
           <a href="">
             <figure>
-              <img src={ragnar} alt="" />
+              <img src={tango} alt="" />
             </figure>
           </a>
-          <h4>Titutlo</h4>
+          <h4>Tango</h4>
           <CardsHomeDescription>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            tempore quaerat, incidunt consectetur alias labore perspiciatis illo
-            reiciendis, voluptas id explicabo a ea iure consequatur architecto,
-            ducimus deleniti enim rem.
+            Oleo sobre tela. 80 x 70cm
           </CardsHomeDescription>
         </article>
       </CardsHome>

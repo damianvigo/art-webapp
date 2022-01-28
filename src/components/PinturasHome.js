@@ -56,7 +56,7 @@ const PinturasHome = () => {
         <h3 className="text-center">Mis Pinturas destacadas</h3>
         <article
           data-aos-duration="3000"
-          data-aos="fade-down-right"
+          data-aos="zoom-out-right"
           className="box-shadow-card"
         >
           <a href="">

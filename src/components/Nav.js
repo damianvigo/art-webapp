@@ -22,6 +22,7 @@ const NavStyled = styled.nav`
     text-align: center;
     text-decoration: none;
     color: var(--first-color);
+    cursor: pointer;
     &:hover {
       color: var(--second-color);
       background-color: var(--first-color);

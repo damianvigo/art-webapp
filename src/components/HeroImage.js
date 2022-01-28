@@ -43,10 +43,12 @@ const HeroImage = () => {
       <HeroImageStyled>
         <HeroImageOpacity>
           <HeroImageContent>
-            <HeroImageTitle className="box-shadow-down">
+            <HeroImageTitle data-aos="fade-down" className="box-shadow-down">
               ¡Hola! Soy Adriana Stigliano
             </HeroImageTitle>
-            <HeroImageSubtitle>Artista Plástica</HeroImageSubtitle>
+            <HeroImageSubtitle data-aos="zoom-in">
+              Artista Plástica
+            </HeroImageSubtitle>
             <Btn />
           </HeroImageContent>
         </HeroImageOpacity>

@@ -33,7 +33,7 @@ const Banner = () => {
     <>
       <BannerStyled>
         <BanerStyledOpacity>
-          <BannerStyledContainer>
+          <BannerStyledContainer data-aos="zoom-in-down">
             <p>
               Para mí pintar es vida y a travez de mis trabajos, trato de
               expresar mi sentir en toda su plenitud

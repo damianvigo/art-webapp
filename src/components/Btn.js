@@ -19,7 +19,9 @@ const Btn = () => {
   return (
     <>
       <Link to="/contacto">
-        <BtnStyled>Contactame</BtnStyled>
+        <BtnStyled data-aos="fade-up" data-aos-duration="3000">
+          Contactame
+        </BtnStyled>
       </Link>
     </>
   );

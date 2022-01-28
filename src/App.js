@@ -4,6 +4,11 @@ import Home from './pages/Home';
 import MisObras from './pages/MisObras';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  duration: 1500,
+});
 
 function App() {
   return (

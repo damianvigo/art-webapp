@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import adri from '../assets/img/adri-perfil-1.jpg';
-import ragnar from '../assets/img/resplandor.jpg';
+import resplandor from '../assets/img/resplandor.jpg';
 
-const ConocemeStyledBackground = styled.div`
+const ConocemeStyledBackground = styled.section`
   background-color: var(--third-alpha-color);
   img {
     border: medium solid var(--black-color);
@@ -34,12 +34,18 @@ const FlipFace = styled.figure`
   width: 100%;
   height: inherit;
   backface-visibility: hidden;
+  &:first-child {
+    transform: rotateY(0deg);
+  }
+  &:last-child {
+    transform: rotateY(180deg);
+  }
   img {
     filter: brightness(1.2);
   }
 `;
 
-const ConocemeSectionStyled = styled.section`
+const ConocemeSectionStyled = styled.div`
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 47%);
@@ -68,7 +74,12 @@ const Conoceme = () => {
         id="conoceme"
         className="conoceme section container full-lg-screen"
       >
-        <ConocemeStyled className="text-center text-lg-left">
+        <ConocemeStyled
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="text-center text-lg-left"
+        >
           <h2 className="conoceme-title text-right">¿Quién soy?</h2>
           <p className="conoceme-description text-right">
             Pinto al óleo y al acrílico. Mi temática es variada realizo
@@ -79,17 +90,25 @@ const Conoceme = () => {
             estar más en contacto con la naturaleza.
           </p>
         </ConocemeStyled>
-        <article>
+        <article
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
           <FlipCard>
-            <FlipFace className="flip-face flip-front">
+            <FlipFace>
               <img src={adri} alt="Adriana Stigliano" />
             </FlipFace>
-            <FlipFace className="flip-face flip-back">
-              <img src={ragnar} alt="Adriana Stigliano" />
+            <FlipFace>
+              <img src={resplandor} alt="Adriana Stigliano" />
             </FlipFace>
           </FlipCard>
         </article>
-        <article>
+        <article
+          data-aos="zoom-out-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <p>
             Trabaje toda mi vida como docente. Estuve en la escuela de Bellas
             Artes General Urquiza,

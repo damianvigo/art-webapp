@@ -54,7 +54,11 @@ const PinturasHome = () => {
     <CardsHomeSection className="section">
       <CardsHome className="container full-lg-screen">
         <h3 className="text-center">Mis Pinturas destacadas</h3>
-        <article className="box-shadow-card">
+        <article
+          data-aos-duration="3000"
+          data-aos="fade-down-right"
+          className="box-shadow-card"
+        >
           <a href="">
             <figure>
               <img src={ragnar} alt="" />
@@ -65,7 +69,11 @@ const PinturasHome = () => {
             Oleo sobre tela. 80 x 70cm
           </CardsHomeDescription>
         </article>
-        <article className="box-shadow-card">
+        <article
+          data-aos-duration="3000"
+          data-aos="fade-up-right"
+          className="box-shadow-card"
+        >
           <a href="">
             <figure>
               <img src={tango} alt="" />

@@ -193,13 +193,5 @@ p {
 
 }
 
-.flip-front {
-  transform: rotateY(0deg);
-}
-
-.flip-back {
-  transform: rotateY(180deg);
-}
-
 
 `;

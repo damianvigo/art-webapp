@@ -11,7 +11,11 @@ const ConocemeStyledBackground = styled.section`
   }
 `;
 
-const ConocemeStyled = styled.article``;
+const ConocemeStyled = styled.article`
+  h2 {
+    color: var(--title-color);
+  }
+`;
 
 const FlipCard = styled.div`
   position: relative;
@@ -80,7 +84,7 @@ const Conoceme = () => {
           data-aos-easing="ease-in-sine"
           className="text-center text-lg-left"
         >
-          <h2 className="conoceme-title text-right">¿Quién soy?</h2>
+          <h2 className="text-right">¿Quién soy?</h2>
           <p className="conoceme-description text-right">
             Pinto al óleo y al acrílico. Mi temática es variada realizo
             paisajes, retratos, marinas y abstractos.
@@ -107,7 +111,8 @@ const Conoceme = () => {
         <article
           data-aos="zoom-out-right"
           data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos-easing="ease-out-sine"
+          data-aos-duration="1000"
         >
           <p>
             Trabaje toda mi vida como docente. Estuve en la escuela de Bellas

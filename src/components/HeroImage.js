@@ -49,7 +49,7 @@ const HeroImage = () => {
             <HeroImageSubtitle data-aos="zoom-in">
               Artista Plástica
             </HeroImageSubtitle>
-            <Btn />
+            <Btn two />
           </HeroImageContent>
         </HeroImageOpacity>
       </HeroImageStyled>

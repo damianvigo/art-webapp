@@ -21,9 +21,14 @@ const CardsHome = styled.section`
     margin: 2rem auto;
     border: thin solid var(--black-color);
   }
-  img {
-    width: 100%;
-    &:hover {
+  figure {
+    background-color: var(--high-black-alpha-color);
+    img {
+      width: 100%;
+      transition: opacity 0.5s ease-out;
+      :hover {
+        opacity: 0.5;
+      }
     }
   }
 

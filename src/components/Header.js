@@ -54,6 +54,10 @@ const Logo = styled.div`
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+    transition: opacity 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.85;
+    }
   }
 `;
 

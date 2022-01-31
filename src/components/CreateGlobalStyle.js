@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --high-black-alpha-color: rgba(0, 0, 0, 0.9);
   --active: #e0aaff;
   --font: 'Lato', sans-serif;
   --max-width: 1200px;
@@ -43,6 +44,11 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+/* p::selection {
+  color: #e0aaff;
+  background-color: var(--link-color);
+} */
 
 body {
   margin: 0;

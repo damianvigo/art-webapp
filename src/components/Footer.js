@@ -15,10 +15,11 @@ const FooterStyled = styled.footer`
     display: inline-block;
     color: var(--text-color);
     margin: 0 5px;
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     text-decoration: underline;
     &:hover {
       transform: scale(1.1);
+      opacity: 0.8;
     }
   }
   .heart {

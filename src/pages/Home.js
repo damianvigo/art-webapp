@@ -11,7 +11,7 @@ const Home = () => {
     {
       id: uuidv4(),
       title: 'Mis Pinturas destacadas',
-      img: 'https://placeimg.com/200/200/tech',
+      img: 'https://placeimg.com/600/600/tech',
       titleCard: 'Ragnar',
       description: 'Oleo sobre tela. 80 x 70cm',
       animateOnScroll: 'fade-down-right',
@@ -19,7 +19,7 @@ const Home = () => {
     },
     {
       id: uuidv4(),
-      img: 'https://placeimg.com/200/200/any',
+      img: 'https://placeimg.com/600/600/any',
       titleCard: 'Tango',
       description: 'Oleo sobre tela. 80 x 70cm',
       animateOnScroll: 'fade-up-right',

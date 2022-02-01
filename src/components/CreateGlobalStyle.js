@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   --title-color: #333;
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
-  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.75);
   --high-black-alpha-color: rgba(0, 0, 0, 0.9);
   --active: #e0aaff;
   --font: 'Lato', sans-serif;

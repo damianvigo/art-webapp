@@ -1,18 +1,19 @@
+import { useState } from 'react';
+import { useModal } from '../hooks/useModal';
 import styled from 'styled-components';
-import tango from '../assets/img/img-5.jpg';
-import ragnar from '../assets/img/img-6.jpg';
+import CardsHome from './CardsHome';
+import Modal from './Modal';
 
 const CardsHomeSection = styled.section`
   background-color: var(--first-alpha-color);
+  border-bottom: thin solid var(--first-color);
   h3 {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    border-bottom: thin solid var(--black-color);
+    padding: 5rem 0;
     margin: 0 auto;
   }
 `;
 
-const CardsHome = styled.section`
+const CardsHomeStyled = styled.section`
   text-align: center;
   article {
     width: 100%;
@@ -32,7 +33,7 @@ const CardsHome = styled.section`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-around;
@@ -47,49 +48,34 @@ const CardsHome = styled.section`
     h3 {
       grid-column: span 2;
     }
+    hr {
+      grid-column: span 2;
+    }
   }
 `;
 
-const CardsHomeDescription = styled.p`
-  padding: 1rem;
-`;
-
-const PinturasHome = () => {
+const PinturasHome = ({ dbHome }) => {
+  const [idModal, setIdModal] = useState('');
+  const [isOpen, isOpenModal, closeModal] = useModal(false);
   return (
     <CardsHomeSection className="section">
-      <CardsHome className="container full-lg-screen">
-        <h3 className="text-center">Mis Pinturas destacadas</h3>
-        <article
-          data-aos-duration="3000"
-          data-aos="fade-down-right"
-          className="box-shadow-card"
-        >
-          <a href="">
-            <figure>
-              <img src={ragnar} alt="" />
-            </figure>
-          </a>
-          <h4>Ragnar</h4>
-          <CardsHomeDescription>
-            Oleo sobre tela. 80 x 70cm
-          </CardsHomeDescription>
-        </article>
-        <article
-          data-aos-duration="3000"
-          data-aos="fade-up-right"
-          className="box-shadow-card"
-        >
-          <a href="">
-            <figure>
-              <img src={tango} alt="" />
-            </figure>
-          </a>
-          <h4>Tango</h4>
-          <CardsHomeDescription>
-            Oleo sobre tela. 80 x 70cm
-          </CardsHomeDescription>
-        </article>
-      </CardsHome>
+      <CardsHomeStyled className="container full-lg-screen">
+        <h3 className="text-center">Pinturas destacadas</h3>
+        <hr style={{ width: '100%', maxWidth: '800px' }} />
+        <CardsHome
+          dbHome={dbHome}
+          setIdModal={setIdModal}
+          isOpenModal={isOpenModal}
+        />
+      </CardsHomeStyled>
+      {idModal && (
+        <Modal
+          idModal={idModal}
+          dbHome={dbHome}
+          closeModal={closeModal}
+          isOpen={isOpen}
+        />
+      )}
     </CardsHomeSection>
   );
 };

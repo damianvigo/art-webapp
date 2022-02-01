@@ -11,13 +11,13 @@ export const GlobalStyle = createGlobalStyle`
   --step-3: clamp(2.27rem, 2.03rem + 1.20vw, 2.93rem);
   --step-4: clamp(2.72rem, 2.38rem + 1.71vw, 3.66rem);
   --step-5: clamp(3.27rem, 2.79rem + 2.39vw, 4.58rem);
-  --first-color: #e0aaff;
-  --first-alpha-color: #e0aaff40;
-  --second-color: #10002b;
+  --first-color: #e0aaff; // usando
+  --first-alpha-color: #e0aaff40; // usando
+  --second-color: #10002b; // usando
   --second-alpha-color: #10002b75;
   --third-color: #c77dff;
   --third-alpha-color: #c77dff45;
-  --white-color: #fff;
+  --white-color: #fff; // usando
   --black-color: #000;
   --link-color: #240046;
   --title-color: #333;

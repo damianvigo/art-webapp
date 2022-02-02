@@ -11,7 +11,7 @@ const initialDbMisObras = [
   {
     id: uuidv4(),
     title: 'Mis Pinturas destacadas',
-    img: 'https://placeimg.com/400/400/animals',
+    img: 'https://i.imgur.com/3rvxNOb.jpg',
     titleCard: 'Animals',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -19,7 +19,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/architecture',
+    img: 'https://i.imgur.com/kEMCZjO.jpg',
     titleCard: 'Architecture',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -27,7 +27,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/nature',
+    img: 'https://i.imgur.com/oes8FxG.jpg',
     titleCard: 'Nature',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -35,7 +35,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/people',
+    img: 'https://i.imgur.com/y3QGWUW.jpg',
     titleCard: 'People',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -43,7 +43,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/tech',
+    img: 'https://i.imgur.com/zm7i3JC.jpg',
     titleCard: 'Tech',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -51,7 +51,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/grayscale',
+    img: 'https://i.imgur.com/WhdHJXi.jpg',
     titleCard: 'Grayscale',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -59,7 +59,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/sepia',
+    img: 'https://i.imgur.com/t60VFKZ.jpg',
     titleCard: 'Sepia',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -67,7 +67,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/animals',
+    img: 'https://i.imgur.com/PYtrxbU.jpg',
     titleCard: 'Animals',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -75,7 +75,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/architecture',
+    img: 'https://i.imgur.com/crXbgFR.jpg',
     titleCard: 'Architecture',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -83,7 +83,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/nature',
+    img: 'https://i.imgur.com/bYzmSVs.jpg',
     titleCard: 'Nature',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -91,7 +91,7 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/people',
+    img: 'https://i.imgur.com/mxS5BBj.jpg',
     titleCard: 'People',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -99,7 +99,71 @@ const initialDbMisObras = [
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/400/400/tech',
+    img: 'https://i.imgur.com/Jjirsbg.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/ecgGWbz.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/udv7WYm.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/P71bs32.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/9ho3VpQ.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/GObvzsm.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/Ww2q1iT.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/NvT8PTn.jpg',
+    titleCard: 'Tech',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://i.imgur.com/VXSCI2m.jpg',
     titleCard: 'Tech',
     description: 'Oleo sobre tela. 80 x 70cm',
     animateOnScroll: 'fade-up',
@@ -138,6 +202,9 @@ const MisObrasContainer = styled.div`
     background-color: var(--high-black-alpha-color);
     img {
       width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: 0 50%;
       transition: opacity 0.5s ease-out;
       :hover {
         opacity: 0.5;

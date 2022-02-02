@@ -42,7 +42,6 @@ const ModalContainer = styled.div`
     width: 100%;
     min-width: 200px;
     max-height: 800px;
-    max-width: 600px;
   }
 `;
 
@@ -55,8 +54,8 @@ const ModalButton = styled.button`
   border: none;
   cursor: pointer;
   svg {
-    width: var(--step-3);
-    height: var(--step-3);
+    width: var(--step-2);
+    height: var(--step-2);
     fill: var(--third-color);
   }
 `;

@@ -1,4 +1,4 @@
-const CardsMisObras = ({ el }) => {
+const CardsMisObras = ({ el, isOpenModal, setIdModal }) => {
   let {
     id,
     img,
@@ -14,11 +14,9 @@ const CardsMisObras = ({ el }) => {
         data-aos={animateOnScroll}
         className="box-shadow-card"
       >
-        <a href="">
-          <figure>
-            <img src={img} alt="" />
-          </figure>
-        </a>
+        <figure onClick={isOpenModal}>
+          <img onClick={() => setIdModal(id)} src={img} alt="" />
+        </figure>
         <h4>{titleCard}</h4>
         <p>{description}</p>
       </article>

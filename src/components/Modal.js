@@ -13,6 +13,7 @@ const ModalStyled = styled.article`
   display: none;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
   &.is-open {
     display: flex;
   }
@@ -64,13 +65,13 @@ const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
   const [modalCard, setModalCard] = useState(dbHome);
 
-  console.log(dbHome);
+  /*   console.log(dbHome);
   console.log(idModal);
-  console.log(modalCard);
+  console.log(modalCard); */
 
   useEffect(() => {
     let card = dbHome.filter((el) => el.id === idModal);
-    console.log(card);
+    // console.log(card);
     setModalCard(card);
   }, [dbHome, idModal, isOpen]);
 

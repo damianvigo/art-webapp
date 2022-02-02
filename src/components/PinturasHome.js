@@ -3,6 +3,27 @@ import { useModal } from '../hooks/useModal';
 import styled from 'styled-components';
 import CardsHome from './CardsHome';
 import Modal from './Modal';
+import { v4 as uuidv4 } from 'uuid';
+
+const initialDbHome = [
+  {
+    id: uuidv4(),
+    title: 'Mis Pinturas destacadas',
+    img: 'https://placeimg.com/600/600/tech',
+    titleCard: 'Ragnar',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-down-right',
+    animateonScrollDuration: '3000',
+  },
+  {
+    id: uuidv4(),
+    img: 'https://placeimg.com/600/600/any',
+    titleCard: 'Tango',
+    description: 'Oleo sobre tela. 80 x 70cm',
+    animateOnScroll: 'fade-up-right',
+    animateonScrollDuration: '3000',
+  },
+];
 
 const CardsHomeSection = styled.section`
   background-color: var(--first-alpha-color);
@@ -54,7 +75,7 @@ const CardsHomeStyled = styled.section`
   }
 `;
 
-const PinturasHome = ({ dbHome }) => {
+const PinturasHome = () => {
   const [idModal, setIdModal] = useState('');
   const [isOpen, isOpenModal, closeModal] = useModal(false);
   return (
@@ -63,7 +84,7 @@ const PinturasHome = ({ dbHome }) => {
         <h3 className="text-center">Pinturas destacadas</h3>
         <hr style={{ width: '100%', maxWidth: '800px' }} />
         <CardsHome
-          dbHome={dbHome}
+          dbHome={initialDbHome}
           setIdModal={setIdModal}
           isOpenModal={isOpenModal}
         />
@@ -71,7 +92,7 @@ const PinturasHome = ({ dbHome }) => {
       {idModal && (
         <Modal
           idModal={idModal}
-          dbHome={dbHome}
+          dbHome={initialDbHome}
           closeModal={closeModal}
           isOpen={isOpen}
         />

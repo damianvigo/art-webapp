@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   --first-alpha-color: #e0aaff40; // usando
   --second-color: #10002b; // usando
   --second-alpha-color: #10002b75;
-  --third-color: #c77dff;
+  --third-color: #c77dff; // usando
   --third-alpha-color: #c77dff45;
   --white-color: #fff; // usando
   --black-color: #000;
@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   --title-color: #333;
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
-  --black-alpha-color: rgba(0, 0, 0, 0.75);
+  --black-alpha-color: rgba(0, 0, 0, 0.75); // usando
   --high-black-alpha-color: rgba(0, 0, 0, 0.9);
   --active: #e0aaff;
   --font: 'Lato', sans-serif;

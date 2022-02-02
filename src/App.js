@@ -6,11 +6,14 @@ import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BtnScrollTop from './components/BtnScrollTop';
+import useScrollTop from './hooks/useScrollTop';
 AOS.init({
   duration: 1500,
 });
 
 function App() {
+  const { toTop, scrollTop, setScrollTop } = useScrollTop();
   return (
     <>
       <GlobalStyle />
@@ -23,6 +26,11 @@ function App() {
           <Route path="*" element={<Error404 />} />
         </Routes>
       </HashRouter>
+      <BtnScrollTop
+        toTop={toTop}
+        scrollTop={scrollTop}
+        setScrollTop={setScrollTop}
+      />
     </>
   );
 }

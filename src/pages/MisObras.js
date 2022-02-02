@@ -3,6 +3,9 @@ import Header from '../components/Header';
 import { v4 as uuidv4 } from 'uuid';
 import CardsMisObras from '../components/CardsMisObras';
 import styled from 'styled-components';
+import { useState } from 'react';
+import { useModal } from '../hooks/useModal';
+import Modal from '../components/Modal';
 
 const initialDbMisObras = [
   {
@@ -147,6 +150,8 @@ const MisObrasContainer = styled.div`
 `;
 
 const MisObras = () => {
+  const [idModal, setIdModal] = useState('');
+  const [isOpen, isOpenModal, closeModal] = useModal(false);
   return (
     <>
       <Header />
@@ -158,11 +163,24 @@ const MisObras = () => {
           <MisObrasContainer className="container">
             {initialDbMisObras.length > 0
               ? initialDbMisObras.map((el) => (
-                  <CardsMisObras key={el.id} el={el} />
+                  <CardsMisObras
+                    key={el.id}
+                    el={el}
+                    isOpenModal={isOpenModal}
+                    setIdModal={setIdModal}
+                  />
                 ))
               : 'No hay datos'}
           </MisObrasContainer>
         </MisObrasSection>
+        {isOpen && (
+          <Modal
+            isOpen={isOpen}
+            closeModal={closeModal}
+            idModal={idModal}
+            dbHome={initialDbMisObras}
+          />
+        )}
       </main>
       <Footer />
     </>

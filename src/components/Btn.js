@@ -5,6 +5,7 @@ const BtnStyled = styled.button`
   /* General Styles */
   display: inline-grid;
   position: relative;
+  top: ${({ topBtn }) => topBtn};
   width: clamp(200px, 20vw, 400px);
   padding: 1rem;
   background-color: var(--second-alpha-color);
@@ -112,7 +113,7 @@ const BtnStyled = styled.button`
     props.five &&
     css`
       &:hover {
-        background-color: #2f9b05;
+        background-color: var(--second-color);
       }
       &:hover span {
         left: 5px;
@@ -133,6 +134,7 @@ const BtnStyled = styled.button`
         opacity: 0;
 
         svg {
+          fill: var(--first-color);
           width: 25px;
           height: 25px;
         }
@@ -173,7 +175,8 @@ const BtnStyled = styled.button`
     `}
 `;
 
-const Btn = ({ one, two, three, four, five, six, submit, enviar }) => {
+const Btn = ({ one, two, three, four, five, six, submit, enviar, topBtn }) => {
+  console.log(topBtn);
   return (
     <>
       <Link style={{ textDecoration: 'none' }} to="/contacto">
@@ -210,6 +213,7 @@ const Btn = ({ one, two, three, four, five, six, submit, enviar }) => {
         <BtnStyled
           type={submit}
           five /* data-aos="fade-up" data-aos-duration="3000" */
+          topBtn={topBtn}
         >
           <div className="icono">
             <svg

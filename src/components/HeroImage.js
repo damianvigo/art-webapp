@@ -36,6 +36,47 @@ const HeroImageContent = styled.div`
   }
 `;
 
+const FormStyled = styled.form`
+  width: 100%;
+  max-width: 800px;
+  padding: 0 0.5rem;
+
+  input[type='text'],
+  input[type='email'] {
+    padding: 1rem;
+    padding-left: 0;
+    border: none;
+    border-bottom: thin solid #fff;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-size: var(--step--1);
+    font-family: var(--font);
+    color: #fff;
+    outline: none;
+    &:focus {
+      background-color: var(--third-alpha-color);
+      color: #fff;
+    }
+  }
+
+  textarea {
+    padding: 1rem;
+    border: thin solid #fff;
+    resize: none;
+  }
+
+  *::placeholder {
+    color: #fff;
+  }
+`;
+
 const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
   return (
     <>
@@ -44,14 +85,18 @@ const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
           <HeroImageOpacity>
             <HeroImageContent>
               <section className="container">
-                <form>
+                <FormStyled>
                   <input type="text" name="nombre" placeholder="Tu nombre" />
                   <input type="email" name="email" placeholder="Tu email" />
-                  <textarea name="comentarios" cols="30" rows="10"></textarea>
-                </form>
+                  <textarea
+                    name="comentarios"
+                    cols="30"
+                    rows="10"
+                    placeholder="Tu comentario"
+                  ></textarea>
+                  <Btn submit="submit" five enviar="Enviar" />
+                </FormStyled>
               </section>
-
-              {/*   <Btn two /> */}
             </HeroImageContent>
           </HeroImageOpacity>
         </HeroImageStyled>

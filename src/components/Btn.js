@@ -173,7 +173,7 @@ const BtnStyled = styled.button`
     `}
 `;
 
-const Btn = ({ one, two, three, four, five, six }) => {
+const Btn = ({ one, two, three, four, five, six, submit, enviar }) => {
   return (
     <>
       <Link style={{ textDecoration: 'none' }} to="/contacto">
@@ -197,22 +197,6 @@ const Btn = ({ one, two, three, four, five, six }) => {
             <span>Contactame</span>
           </BtnStyled>
         )}
-        {five && (
-          <BtnStyled five /* data-aos="fade-up" data-aos-duration="3000" */>
-            <div className="icono">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="#fff"
-              >
-                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-              </svg>
-            </div>
-            <span>Contactame</span>
-          </BtnStyled>
-        )}
         {six && (
           <BtnStyled six /* data-aos="fade-up" data-aos-duration="3000" */>
             <span>Contactame</span>
@@ -222,6 +206,25 @@ const Btn = ({ one, two, three, four, five, six }) => {
           </BtnStyled>
         )}
       </Link>
+      {five && (
+        <BtnStyled
+          type={submit}
+          five /* data-aos="fade-up" data-aos-duration="3000" */
+        >
+          <div className="icono">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+            </svg>
+          </div>
+          <span>{enviar}</span>
+        </BtnStyled>
+      )}
     </>
   );
 };

@@ -14,8 +14,10 @@ const ModalStyled = styled.article`
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  &.is-open {
-    display: flex;
+  @media screen and (min-width: 597px) {
+    &.is-open {
+      display: flex;
+    }
   }
 `;
 
@@ -32,17 +34,9 @@ const ModalContainer = styled.div`
   flex-direction: column;
   text-align: center;
   min-width: 320px;
-  max-width: 480px;
-  min-height: 200px;
-  max-height: 600px;
+  max-width: 500px;
   overflow-y: auto;
   background-color: #fff;
-
-  @media screen and (min-width: 380px) {
-    width: 100%;
-    min-width: 200px;
-    max-height: 800px;
-  }
 `;
 
 const ModalButton = styled.button`
@@ -75,10 +69,7 @@ const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
   }, [dbHome, idModal, isOpen]);
 
   return (
-    <ModalStyled
-      className={`modal ${isOpen && 'is-open'}`}
-      onClick={closeModal}
-    >
+    <ModalStyled className={`${isOpen && 'is-open'}`} onClick={closeModal}>
       <ModalContainer
         className="modal-container"
         onClick={handleModalContainerClick}

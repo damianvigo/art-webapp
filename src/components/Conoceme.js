@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import adri from '../assets/img/adri-perfil-1.jpg';
-import resplandor from '../assets/img/resplandor.jpg';
 
 const ConocemeStyledBackground = styled.section`
   background-color: var(--third-alpha-color);
@@ -71,7 +69,7 @@ const ConocemeSectionStyled = styled.div`
   }
 `;
 
-const Conoceme = () => {
+const Conoceme = ({ resplandor, avatar }) => {
   return (
     <ConocemeStyledBackground>
       <ConocemeSectionStyled
@@ -101,7 +99,7 @@ const Conoceme = () => {
         >
           <FlipCard>
             <FlipFace>
-              <img src={adri} alt="Adriana Stigliano" />
+              <img src={avatar} alt="Adriana Stigliano" />
             </FlipFace>
             <FlipFace>
               <img src={resplandor} alt="Adriana Stigliano" />

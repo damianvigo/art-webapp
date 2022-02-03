@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import ola from '../assets/img/img-22.jpg';
 
 const BannerStyled = styled.article`
-  background-image: url(${ola});
+  background-image: url(${({ banner }) => banner});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 50%;
@@ -28,10 +27,10 @@ const BannerStyledContainer = styled.div`
   }
 `;
 
-const Banner = () => {
+const Banner = ({ banner }) => {
   return (
     <>
-      <BannerStyled>
+      <BannerStyled banner={banner}>
         <BanerStyledOpacity>
           <BannerStyledContainer data-aos="zoom-in-down">
             <p>

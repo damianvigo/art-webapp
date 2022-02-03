@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useModal } from '../hooks/useModal';
 import Modal from '../components/Modal';
+import Message from '../components/Message';
 
 const initialDbMisObras = [
   {
@@ -202,18 +203,26 @@ const MisObrasContainer = styled.div`
     background-color: var(--high-black-alpha-color);
     img {
       width: 100%;
-      height: 300px;
+      height: auto;
       object-fit: cover;
       object-position: 0 50%;
       transition: opacity 0.5s ease-out;
-      :hover {
-        opacity: 0.5;
-      }
     }
   }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 3rem;
+
+  @media screen and (min-width: 600px) {
+    article figure img {
+      height: 300px;
+      object-fit: cover;
+      object-position: 0 20%;
+      :hover {
+        opacity: 0.5;
+      }
+    }
+  }
 `;
 
 const MisObras = () => {
@@ -228,16 +237,18 @@ const MisObras = () => {
         </TitleMisObras>
         <MisObrasSection className="section">
           <MisObrasContainer className="container">
-            {initialDbMisObras.length > 0
-              ? initialDbMisObras.map((el) => (
-                  <CardsMisObras
-                    key={el.id}
-                    el={el}
-                    isOpenModal={isOpenModal}
-                    setIdModal={setIdModal}
-                  />
-                ))
-              : 'No hay datos'}
+            {initialDbMisObras.length > 0 ? (
+              initialDbMisObras.map((el) => (
+                <CardsMisObras
+                  key={el.id}
+                  el={el}
+                  isOpenModal={isOpenModal}
+                  setIdModal={setIdModal}
+                />
+              ))
+            ) : (
+              <Message msg={`Error al cargar las imágenes`} />
+            )}
           </MisObrasContainer>
         </MisObrasSection>
         {isOpen && (

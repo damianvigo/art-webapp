@@ -9,17 +9,17 @@ const initialDbHome = [
   {
     id: uuidv4(),
     title: 'Mis Pinturas destacadas',
-    img: 'https://placeimg.com/600/600/tech',
+    img: 'https://i.imgur.com/HWhhrlP.jpg',
     titleCard: 'Ragnar',
-    description: 'Oleo sobre tela. 80 x 70cm',
+    description: 'Oleo sobre tela. 70 x 80cm',
     animateOnScroll: 'fade-down-right',
     animateonScrollDuration: '3000',
   },
   {
     id: uuidv4(),
-    img: 'https://placeimg.com/600/600/any',
-    titleCard: 'Tango',
-    description: 'Oleo sobre tela. 80 x 70cm',
+    img: 'https://i.imgur.com/5rasjAM.jpg',
+    titleCard: 'Desde mi sentir',
+    description: 'Oleo sobre tela. 70 x 80cm',
     animateOnScroll: 'fade-up-right',
     animateonScrollDuration: '3000',
   },
@@ -49,7 +49,6 @@ const CardsHomeStyled = styled.section`
       width: 100%;
       transition: opacity 0.5s ease-out;
       :hover {
-        opacity: 0.5;
       }
     }
   }
@@ -65,6 +64,7 @@ const CardsHomeStyled = styled.section`
       object-position: 50% 50%;
     }
     img:hover {
+      opacity: 0.5;
     }
     h3 {
       grid-column: span 2;

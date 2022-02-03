@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import img from '../assets/img/img-12.jpg';
 import Btn from './Btn';
 
 const HeroImageStyled = styled.article`
-  background-image: url(${img});
+  background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 60%;
@@ -37,22 +36,40 @@ const HeroImageContent = styled.div`
   }
 `;
 
-const HeroImage = () => {
+const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
   return (
     <>
-      <HeroImageStyled>
-        <HeroImageOpacity>
-          <HeroImageContent>
-            <HeroImageTitle data-aos="fade-down" className="box-shadow-down">
-              ¡Hola! Soy Adriana Stigliano
-            </HeroImageTitle>
-            <HeroImageSubtitle data-aos="zoom-in">
-              Artista Plástica
-            </HeroImageSubtitle>
-            <Btn two />
-          </HeroImageContent>
-        </HeroImageOpacity>
-      </HeroImageStyled>
+      {contact ? (
+        <HeroImageStyled backgroundImage={backgroundImage}>
+          <HeroImageOpacity>
+            <HeroImageContent>
+              <section className="container">
+                <form>
+                  <input type="text" name="nombre" placeholder="Tu nombre" />
+                  <input type="email" name="email" placeholder="Tu email" />
+                  <textarea name="comentarios" cols="30" rows="10"></textarea>
+                </form>
+              </section>
+
+              {/*   <Btn two /> */}
+            </HeroImageContent>
+          </HeroImageOpacity>
+        </HeroImageStyled>
+      ) : (
+        <HeroImageStyled backgroundImage={backgroundImage}>
+          <HeroImageOpacity>
+            <HeroImageContent>
+              <HeroImageTitle data-aos="fade-down" className="box-shadow-down">
+                {title}
+              </HeroImageTitle>
+              <HeroImageSubtitle data-aos="zoom-in">
+                {subtitle}
+              </HeroImageSubtitle>
+              <Btn two />
+            </HeroImageContent>
+          </HeroImageOpacity>
+        </HeroImageStyled>
+      )}
     </>
   );
 };

@@ -1,4 +1,5 @@
 import CardHome from './CardHome';
+import Message from './Message';
 
 const CardsHome = ({ dbHome, setIdModal, isOpenModal }) => {
   return (
@@ -14,7 +15,7 @@ const CardsHome = ({ dbHome, setIdModal, isOpenModal }) => {
           />
         ))
       ) : (
-        <h1>Error al cargar las imagenes</h1>
+        <Message marginTop={'5rem'} msg={`Error al cargar las imágenes`} />
       )}
     </>
   );

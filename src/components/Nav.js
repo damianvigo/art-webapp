@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import { NavLink, useLocation, Link as LinkRouter } from 'react-router-dom';
+import { useRef } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
 

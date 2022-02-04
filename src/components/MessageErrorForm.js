@@ -15,6 +15,7 @@ const MessageErrorForm = ({
   errorSubject,
   errorComment,
 }) => {
+  console.log(errorName);
   return (
     <>
       {errorName ? (

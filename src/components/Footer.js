@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import SvgFacebook from '../assets/icon/elements/SvgFacebook';
+import SvgInstagram from '../assets/icon/elements/SvgInstagram';
 
 const FooterStyled = styled.footer`
   display: flex;
@@ -54,11 +56,31 @@ const FooterStyled = styled.footer`
   }
 `;
 
+const ContainerIcons = styled.div`
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    svg {
+      :hover {
+        filter: sepia(0.8);
+      }
+    }
+  }
+`;
+
 const Footer = () => {
   return (
     <FooterStyled>
       <article>
-        <p>Adriana Stigliano © 2022 </p>
+        <ContainerIcons>
+          <div>
+            <SvgFacebook />
+            <SvgInstagram />
+          </div>
+          <p>Adriana Stigliano © 2022 </p>
+        </ContainerIcons>
       </article>
       <article>
         <p>

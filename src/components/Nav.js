@@ -63,6 +63,7 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
   const closeMenu = (e) => {
     if (btnMenu) {
       setChangeBtn(!showChangeBtn);
+      e.target.classList.add('active');
     }
   };
 

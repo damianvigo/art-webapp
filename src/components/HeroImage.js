@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Btn from './Btn';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 import MessageErrorForm from '../components/MessageErrorForm';
 import initialForm from '../helpers/initialForm';
 import { validationsForm } from '../helpers/validationsForm';
@@ -19,6 +21,7 @@ const HeroImageOpacity = styled.aside`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: ${({ contactPaddingTop }) => contactPaddingTop};
   padding-bottom: ${(props) => props.contactPaddingBottom};
   text-align: center;
   background-color: var(--black-alpha-color);
@@ -37,8 +40,8 @@ const HeroImageSubtitle = styled.h2`
 const HeroImageContent = styled.div`
   h1,
   h2 {
-    margin-bottom: var(--step-1)};
-    color: ${(props) => props.contact || 'var(--white-color)'};
+    margin-bottom: var(--step-1);
+    color: var(--white-color);
     /*   padding-top: ${({ contactPadding }) => contactPadding || '6rem'}; */
   }
 `;
@@ -47,7 +50,7 @@ const FormStyled = styled.form`
   width: 100%;
   max-width: 800px;
   height: auto;
-
+  margin-bottom: 6rem;
   padding: 0 1rem;
 
   input[type='text'],
@@ -99,42 +102,65 @@ const FormStyled = styled.form`
 `;
 
 const ContactTitle = styled.div`
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate(-1px, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate(2px, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate(-4px, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate(4px, 0);
+    }
+  }
+
+  @keyframes moveTitle {
+    0% {
+      transform: translate(0);
+    }
+
+    50% {
+      transform: translateX(-500%);
+    }
+
+    65% {
+      transform: translateX(0);
+    }
+
+    75% {
+      transform: translateY(-500%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
   h1 {
     margin-bottom: 0.5rem;
+    animation: moveTitle 10s ease 2 2s both;
   }
 
   svg {
     margin-left: 1rem;
     width: var(--step-5);
-    height var(--step-5);
-    animation: shake 2s linear alternate infinite both;
+    height: var(--step-5);
+    animation: shake 2s ease-in-out infinite both;
   }
-
-  @keyframes shake {
-  10%,
-  90% {
-    transform: translate(-1px, 0);
-  }
-
-  20%,
-  80% {
-    transform: translate(2px, 0);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: translate(-4px, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate(4px, 0);
-  }
-}
 `;
 
 const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
@@ -151,13 +177,14 @@ const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
     <>
       {contact ? (
         <HeroImageStyled backgroundImage={backgroundImage}>
-          <HeroImageOpacity contactPaddingBottom="8rem">
+          <HeroImageOpacity
+            contactPaddingTop="8rem"
+            contactPaddingBottom="8rem"
+          >
             <HeroImageContent>
               <section className="container">
                 <ContactTitle>
-                  <h1 contact contactPadding contactMarginBottom={'5rem'}>
-                    Hablemos
-                  </h1>
+                  <h1>Hablemos</h1>
                   <svg
                     width="24px"
                     height="24px"
@@ -225,6 +252,13 @@ const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
                   )}
                   <Btn submit="submit" five enviar="Enviar" topBtn={'5vh'} />
                 </FormStyled>
+                {loading && <Loader />}
+                {response && (
+                  <Message
+                    response="5vh"
+                    msg="Sus datos han sido enviados 📧 Me pondré en contacto contigo pronto! 😊"
+                  />
+                )}
               </section>
             </HeroImageContent>
           </HeroImageOpacity>

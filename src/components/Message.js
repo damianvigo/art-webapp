@@ -5,22 +5,21 @@ const MessageStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
-  width: 100%;
+  min-height: ${({ response }) => response || '10vh'};
   padding: 1rem;
   margin-top: ${({ marginTop }) => marginTop};
   background-color: var(--second-color);
   color: var(--third-color);
   grid-column: span 2;
-  text-align: center;
+  text-align: left;
   p {
-    font-size: var(--step-2);
+    font-size: var(--step-0);
   }
 `;
 
-const Message = ({ msg }) => {
+const Message = ({ msg, response }) => {
   return (
-    <MessageStyled>
+    <MessageStyled response={response}>
       <p>{msg}</p>
     </MessageStyled>
   );

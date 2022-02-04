@@ -83,6 +83,9 @@ const Conoceme = ({ resplandor, avatar }) => {
           className="text-center text-lg-left"
         >
           <h2 className="text-right">¿Quién soy?</h2>
+          <p className="text-right">
+            Me llamo Adriana Stigliano y soy de Buenos Aires Argentina.
+          </p>
           <p className="conoceme-description text-right">
             Pinto al óleo y al acrílico. Mi temática es variada realizo
             paisajes, retratos, marinas y abstractos.
@@ -114,7 +117,7 @@ const Conoceme = ({ resplandor, avatar }) => {
         >
           <p>
             Trabaje toda mi vida como docente. Estuve en la escuela de Bellas
-            Artes General Urquiza,
+            Artes General Urquiza.
           </p>
           <p>
             En ella realicé proyectos de arte vinculados a la formación de niños

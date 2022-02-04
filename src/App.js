@@ -20,7 +20,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/exposiciones" element={<Conoceme />} /> */}
+          {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />

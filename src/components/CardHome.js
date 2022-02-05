@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-const CardStyled = styled.article``;
+const CardStyled = styled.article`
+  figure {
+  }
+`;
 
 const CardsHomeDescription = styled.p`
   padding: 1rem;

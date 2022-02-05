@@ -52,7 +52,14 @@ const CardsHomeStyled = styled.section`
     }};
   }
   figure {
-    background-color: var(--high-black-alpha-color);
+    background-color: ${({ theme }) => {
+      console.log(theme);
+      if (theme === 'dark') {
+        return 'var(--white-color)';
+      } else {
+        return 'var(--text-color)';
+      }
+    }};
     img {
       width: 100%;
       transition: opacity 0.5s ease-out;

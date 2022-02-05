@@ -5,9 +5,11 @@ const ThemeContext = createContext();
 
 const initialTheme = JSON.parse(localStorage.getItem('theme')) || [];
 
+const initialBtnIcon = JSON.parse(localStorage.getItem('btnIcon') || false);
+
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(initialTheme);
-  const [btnSvg, setBtnSvg] = useState(false);
+  const [btnSvg, setBtnSvg] = useState(initialBtnIcon);
 
   const handleTheme = (e) => {
     if (btnSvg) {
@@ -21,7 +23,8 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme));
-  }, [theme]);
+    localStorage.setItem('btnIcon', JSON.stringify(btnSvg));
+  }, [theme, btnSvg]);
 
   const data = { theme, handleTheme, btnSvg };
 

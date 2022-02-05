@@ -33,7 +33,7 @@ const BtnScrollTopStyled = styled.button`
   }
 
   @media screen and (max-width: 1024px) {
-    bottom: 8vh;
+    bottom: 9vh;
   }
 `;
 

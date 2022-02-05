@@ -11,7 +11,7 @@ const ConocemeStyledBackground = styled.section`
 
 const ConocemeStyled = styled.article`
   h2 {
-    color: var(--title-color);
+    color: ${({ theme }) => theme || 'var(--title-color);'};
   }
 `;
 
@@ -69,9 +69,9 @@ const ConocemeSectionStyled = styled.div`
   }
 `;
 
-const Conoceme = ({ resplandor, avatar }) => {
+const Conoceme = ({ theme, resplandor, avatar }) => {
   return (
-    <ConocemeStyledBackground>
+    <ConocemeStyledBackground className={theme}>
       <ConocemeSectionStyled
         id="conoceme"
         className="conoceme section container full-lg-screen"

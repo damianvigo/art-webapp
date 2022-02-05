@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+const CardStyled = styled.article``;
+
 const CardsHomeDescription = styled.p`
   padding: 1rem;
 `;
@@ -16,10 +18,10 @@ const CardsHome = ({ el, setIdModal, isOpenModal }) => {
 
   return (
     <>
-      <article
+      <CardStyled
         data-aos-duration={animateonScrollDuration}
         data-aos={animateOnScroll}
-        className="box-shadow-card"
+        className={'box-shadow-card'}
       >
         <figure onClick={isOpenModal}>
           <img onClick={() => setIdModal(id)} src={img} alt="" />
@@ -27,7 +29,7 @@ const CardsHome = ({ el, setIdModal, isOpenModal }) => {
 
         <h4>{titleCard}</h4>
         <CardsHomeDescription>{description}</CardsHomeDescription>
-      </article>
+      </CardStyled>
     </>
   );
 };

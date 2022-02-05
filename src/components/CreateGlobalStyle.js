@@ -33,6 +33,16 @@ export const GlobalStyle = createGlobalStyle`
   --header-height: 4rem;
 }
 
+.dark {
+  background-color: #1f1f1f;
+  color: #EEEEEE;
+  transition: all 0.3s ease-in;
+}
+
+.light {
+  transition: all 0.3s ease-in;
+}
+
 /* Reset */
 html {
   box-sizing: border-box;
@@ -79,6 +89,7 @@ h1 {
 h2 {
   margin: 0;
   font-size: var(--step-4);
+  
 }
 
 h3 {

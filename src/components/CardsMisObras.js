@@ -7,6 +7,7 @@ const CardsMisObras = ({ el, isOpenModal, setIdModal }) => {
     animateOnScroll,
     animateonScrollDuration,
   } = el;
+
   return (
     <>
       <article

@@ -1,11 +1,9 @@
 import Banner from '../components/Banner';
-
 import Conoceme from '../components/Conoceme';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import PinturasHome from '../components/PinturasHome';
-import useScrollTop from '../hooks/useScrollTop';
 
 const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   title = '¡Hola! Soy Adriana Stigliano',
@@ -14,20 +12,22 @@ const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   avatar = 'https://i.imgur.com/xOfTOvB.jpg',
   banner = 'https://i.imgur.com/Veoqbq1.jpg';
 
-const Home = () => {
+const Home = ({ theme }) => {
   return (
-    <main>
+    <>
       <Header />
-      <HeroImage
-        backgroundImage={backgroundImage}
-        title={title}
-        subtitle={subtitle}
-      />
-      <Conoceme avatar={avatar} resplandor={resplandor} />
-      <Banner banner={banner} />
-      <PinturasHome />
-      <Footer />
-    </main>
+      <main>
+        <HeroImage
+          backgroundImage={backgroundImage}
+          title={title}
+          subtitle={subtitle}
+        />
+        <Conoceme theme={theme} avatar={avatar} resplandor={resplandor} />
+        <Banner banner={banner} />
+        <PinturasHome theme={theme} />
+      </main>
+      <Footer theme={theme} />
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import { useContext, useEffect, useState } from 'react';
+import styled, { css } from 'styled-components';
+import ThemeContext from '../context/ThemeContext';
 import './Modal.css';
 
 const ModalStyled = styled.article`
@@ -36,7 +37,7 @@ const ModalContainer = styled.div`
   min-width: 320px;
   max-width: 500px;
   overflow-y: auto;
-  background-color: #fff;
+  background-color: var(--white-color);
 `;
 
 const ModalButton = styled.button`
@@ -57,6 +58,7 @@ const ModalButton = styled.button`
 const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
   const [modalCard, setModalCard] = useState(dbHome);
+  const { theme } = useContext(ThemeContext);
 
   /*   console.log(dbHome);
   console.log(idModal);
@@ -71,7 +73,7 @@ const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
   return (
     <ModalStyled className={`${isOpen && 'is-open'}`} onClick={closeModal}>
       <ModalContainer
-        className="modal-container"
+        className={`${theme} modal-container`}
         onClick={handleModalContainerClick}
       >
         <ModalButton onClick={closeModal}>

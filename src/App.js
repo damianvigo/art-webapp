@@ -8,18 +8,27 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BtnScrollTop from './components/BtnScrollTop';
 import useScrollTop from './hooks/useScrollTop';
+import ScrollToTop from './components/ScrollToTop';
+
+import { useContext } from 'react';
+import ThemeContext from './context/ThemeContext';
+import BtnDarkMode from './components/BtnDarkMode';
+
 AOS.init({
   duration: 1500,
 });
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   const { toTop, scrollTop, setScrollTop } = useScrollTop();
   return (
     <>
       <GlobalStyle />
       <HashRouter>
+        <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home theme={theme} />} />
           {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />
@@ -31,6 +40,7 @@ function App() {
         scrollTop={scrollTop}
         setScrollTop={setScrollTop}
       />
+      <BtnDarkMode />
     </>
   );
 }

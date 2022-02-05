@@ -2,11 +2,12 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { v4 as uuidv4 } from 'uuid';
 import CardsMisObras from '../components/CardsMisObras';
-import styled from 'styled-components';
-import { useState } from 'react';
+import styled, { css } from 'styled-components';
+import { useContext, useState } from 'react';
 import { useModal } from '../hooks/useModal';
 import Modal from '../components/Modal';
 import Message from '../components/Message';
+import ThemeContext from '../context/ThemeContext';
 
 const initialDbMisObras = [
   {
@@ -193,8 +194,13 @@ const MisObrasContainer = styled.div`
     max-width: 400px;
     min-width: 200px;
     margin: 2rem auto;
-    border: thin solid var(--black-color);
+    border: thin solid var(--text-color);
     text-align: center;
+    ${({ theme }) =>
+      theme === 'dark' &&
+      css`
+        border: thin solid var(--white-color);
+      `}
     p {
       font-size: var(--step--2);
     }
@@ -228,15 +234,17 @@ const MisObrasContainer = styled.div`
 const MisObras = () => {
   const [idModal, setIdModal] = useState('');
   const [isOpen, isOpenModal, closeModal] = useModal(false);
+
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <Header />
-      <main>
+      <main className={theme}>
         <TitleMisObras>
           <h1 className="text-center">Mis Obras</h1>
         </TitleMisObras>
         <MisObrasSection className="section">
-          <MisObrasContainer className="container">
+          <MisObrasContainer theme={theme} className="container">
             {initialDbMisObras.length > 0 ? (
               initialDbMisObras.map((el) => (
                 <CardsMisObras
@@ -260,7 +268,7 @@ const MisObras = () => {
           />
         )}
       </main>
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 };

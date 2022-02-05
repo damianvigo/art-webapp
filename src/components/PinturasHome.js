@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useModal } from '../hooks/useModal';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import CardsHome from './CardsHome';
 import Modal from './Modal';
 import { v4 as uuidv4 } from 'uuid';
@@ -41,7 +41,15 @@ const CardsHomeStyled = styled.section`
     min-width: 200px;
     max-width: 400px;
     margin: 2rem auto;
-    border: thin solid var(--black-color);
+    border: thin solid var(--text-color);
+    border: ${({ theme }) => {
+      console.log(theme);
+      if (theme === 'dark') {
+        return 'thin solid var(--white-color)';
+      } else {
+        return;
+      }
+    }};
   }
   figure {
     background-color: var(--high-black-alpha-color);
@@ -75,12 +83,12 @@ const CardsHomeStyled = styled.section`
   }
 `;
 
-const PinturasHome = () => {
+const PinturasHome = ({ theme }) => {
   const [idModal, setIdModal] = useState('');
   const [isOpen, isOpenModal, closeModal] = useModal(false);
   return (
-    <CardsHomeSection className="section">
-      <CardsHomeStyled className="container full-lg-screen">
+    <CardsHomeSection className={`${theme} section`}>
+      <CardsHomeStyled theme={theme} className="container full-lg-screen">
         <h3 className="text-center">Pinturas destacadas</h3>
         <hr style={{ width: '100%', maxWidth: '800px' }} />
         <CardsHome

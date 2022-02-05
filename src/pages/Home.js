@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import PinturasHome from '../components/PinturasHome';
+import { Helmet } from 'react-helmet';
 
 const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   title = '¡Hola! Soy Adriana Stigliano',
@@ -15,6 +16,9 @@ const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
 const Home = ({ theme }) => {
   return (
     <>
+      <Helmet>
+        <title>Bienvenida@</title>
+      </Helmet>
       <Header />
       <main>
         <HeroImage

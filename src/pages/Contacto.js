@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import Footer from '../components/Footer';
@@ -10,6 +11,9 @@ const Contacto = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <>
+      <Helmet>
+        <title>Contacto</title>
+      </Helmet>
       <Header />
       <main>
         <HeroImage contact backgroundImage={backgroundImage} />

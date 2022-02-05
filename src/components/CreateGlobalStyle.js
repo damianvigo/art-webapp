@@ -128,6 +128,18 @@ p {
   font-size: var(--step-0);
 }
 
+p::selection,
+span::selection,
+b::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background-color: var(--third-alpha-color);
+}
+
 /* small, b {
   font-size: 1.4rem;
 } */

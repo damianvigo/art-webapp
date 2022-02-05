@@ -1,7 +1,7 @@
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import HamburgerButton from './HamburgerButton';
 import Nav from './Nav';
-import styled from 'styled-components';
 import { useState } from 'react';
 
 const HeaderStyled = styled.header`

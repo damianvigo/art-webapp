@@ -1,5 +1,6 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import { Helmet } from 'react-helmet';
 import { v4 as uuidv4 } from 'uuid';
 import CardsMisObras from '../components/CardsMisObras';
 import styled, { css } from 'styled-components';
@@ -238,6 +239,9 @@ const MisObras = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <>
+      <Helmet>
+        <title>Mis Obras</title>
+      </Helmet>
       <Header />
       <main className={theme}>
         <TitleMisObras>

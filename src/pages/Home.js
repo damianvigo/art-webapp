@@ -24,16 +24,8 @@ const Home = ({ theme }) => {
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
 
-        <meta
-          property="og:image"
-          name="twitter:image"
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-        />
-        <meta
-          property="og:url"
-          name="twitter:url"
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-        />
+        <meta property="og:image" name="twitter:image" content={homeImg} />
+        <meta property="og:url" name="twitter:url" content={homeImg} />
       </Helmet>
       <Header />
       <main>

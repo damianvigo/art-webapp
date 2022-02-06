@@ -28,25 +28,18 @@ function App() {
     <>
       <GlobalStyle />
       <Helmet>
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href={`https://adrianastiglianoarte.netlify.app#${ico}`}
-        />
-        <link
-          rel="apple-touch-icon"
-          href={`https://adrianastiglianoarte.netlify.app#${ico}`}
-        />
+        <link rel="icon" type="image/x-icon" href={ico} />
+        <link rel="apple-touch-icon" href={ico} />
         <meta name="theme-color" content="#e0aaff" />
         <meta
           property="og:image"
           name="twitter:image"
-          content={`https://adrianastiglianoarte.netlify.app#${homeImg}`}
+          content={`https://adrianastiglianoarte.netlify.app/#${homeImg}`}
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content={`https://adrianastiglianoarte.netlify.app#${homeImg}`}
+          content={`https://adrianastiglianoarte.netlify.app/#${homeImg}`}
         />
       </Helmet>
       <HashRouter>

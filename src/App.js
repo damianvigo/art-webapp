@@ -41,11 +41,13 @@ function App() {
         />
         <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
         <link
-          rel="shortcut icon"
-          href="./assets/icon/favicon.png"
-          type="image/x-icon"
+          rel="favicon"
+          href="https://adrianastiglianoarte.netlify.app/public/favicon.png"
         />
-        <link rel="apple-touch-icon" href="./assets/icon/favicon.png" />
+        <link
+          rel="apple-touch-icon"
+          href="https://adrianastiglianoarte.netlify.app/public/favicon.png"
+        />
         <meta name="theme-color" content="#e0aaff" />
 
         <meta name="twitter:card" content="summary" />
@@ -58,12 +60,12 @@ function App() {
         <meta
           property="og:image"
           name="twitter:image"
-          content="https://adrianastiglianoarte.netlify.app/src/assets/img/home.jpg"
+          content="./assets/img/home.jpg"
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app/"
+          content="https://adrianastiglianoarte.netlify.app/public/home.jpg"
         />
         <meta
           property="og:description"

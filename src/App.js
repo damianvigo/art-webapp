@@ -39,15 +39,15 @@ function App() {
           name="description"
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <link rel="canonical" href="https://adrianastigliano.netlify.app" />
+        <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
         <link
           rel="shortcut icon"
-          href="https://adrianastigliano.netlify.app/static/favicon.png"
+          href="https://adrianastiglianoarte.netlify.app/build/favicon.png"
           type="image/x-icon"
         />
         <link
           rel="apple-touch-icon"
-          href="https://adrianastigliano.netlify.app/static/favicon.png"
+          href="https://adrianastiglianoarte.netlify.app/build/favicon.png"
         />
         <meta name="theme-color" content="#e0aaff" />
 
@@ -61,12 +61,12 @@ function App() {
         <meta
           property="og:image"
           name="twitter:image"
-          content="https://adrianastigliano.netlify.app/home.jpg"
+          content="https://adrianastiglianoarte.netlify.app/src/assets/img/home.jpg"
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastigliano.netlify.app/"
+          content="https://adrianastiglianoarte.netlify.app/"
         />
         <meta
           property="og:description"

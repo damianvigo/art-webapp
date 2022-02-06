@@ -19,20 +19,28 @@ const Home = ({ theme }) => {
     <>
       <Helmet>
         <title>Bienvenid@</title>
-        <meta name="twitter:card" content="summary" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          name="twitter:title"
+          /*     name="twitter:title" */
           content="Portafolio Artístico Adriana Stigliano"
         />
-        <meta property="og:image" name="twitter:image" content={`${homeImg}`} />
-        <meta property="og:url" name="twitter:url" content={`${homeImg}`} />
+        <meta
+          property="og:image"
+          /*         name="twitter:image" */
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
+        <meta
+          property="og:url"
+          /*         name="twitter:url" */
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
         <meta
           property="og:description"
-          name="twitter:description"
+          /*           name="twitter:description" */
           content="Portafolio Artístico Adriana Stigliano"
         />
+        {/*       <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" /> */}
       </Helmet>
       <Header />
       <main>

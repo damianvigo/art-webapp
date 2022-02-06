@@ -42,12 +42,12 @@ function App() {
         <link rel="canonical" href="https://adrianastigliano.netlify.app" />
         <link
           rel="shortcut icon"
-          href="https://adrianastigliano.netlify.app/build/favicon.png"
+          href="https://adrianastigliano.netlify.app/static/favicon.png"
           type="image/x-icon"
         />
         <link
           rel="apple-touch-icon"
-          href="https://adrianastigliano.netlify.app/build/favicon.png"
+          href="https://adrianastigliano.netlify.app/static/favicon.png"
         />
         <meta name="theme-color" content="#e0aaff" />
 
@@ -61,7 +61,7 @@ function App() {
         <meta
           property="og:image"
           name="twitter:image"
-          content="https://adrianastigliano.netlify.app/src/assets/img/home.jpg"
+          content="https://adrianastigliano.netlify.app/home.jpg"
         />
         <meta
           property="og:url"

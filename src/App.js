@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import MisObras from './pages/MisObras';
 import Contacto from './pages/Contacto';
@@ -31,25 +31,25 @@ function App() {
         <link
           rel="icon"
           type="image/x-icon"
-          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+          href={`https://adrianastiglianoarte.netlify.app#${ico}`}
         />
         <link
           rel="apple-touch-icon"
-          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+          href={`https://adrianastiglianoarte.netlify.app#${ico}`}
         />
         <meta name="theme-color" content="#e0aaff" />
         <meta
           property="og:image"
           name="twitter:image"
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+          content={`https://adrianastiglianoarte.netlify.app#${homeImg}`}
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+          content={`https://adrianastiglianoarte.netlify.app#${homeImg}`}
         />
       </Helmet>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home theme={theme} />} />
@@ -58,7 +58,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <BtnScrollTop
         toTop={toTop}
         scrollTop={scrollTop}

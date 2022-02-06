@@ -1,4 +1,3 @@
-import homeImg from '../assets/img/homeImg.jpg';
 import Banner from '../components/Banner';
 import Conoceme from '../components/Conoceme';
 import Footer from '../components/Footer';
@@ -20,27 +19,9 @@ const Home = ({ theme }) => {
       <Helmet>
         <title>Bienvenid@</title>
         <meta
-          property="og:title"
-          /*     name="twitter:title" */
-          content="Portafolio Artístico Adriana Stigliano"
+          name="description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <meta
-          property="og:image"
-          /*         name="twitter:image" */
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-        />
-        <meta
-          property="og:url"
-          /*         name="twitter:url" */
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-        />
-        <meta
-          property="og:description"
-          /*           name="twitter:description" */
-          content="Portafolio Artístico Adriana Stigliano"
-        />
-        {/*       <meta name="twitter:card" content="summary" />
-        <meta property="og:type" content="website" /> */}
       </Helmet>
       <Header />
       <main>

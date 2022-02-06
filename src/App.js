@@ -42,13 +42,10 @@ function App() {
         <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
         <link
           rel="shortcut icon"
-          href="https://adrianastiglianoarte.netlify.app/build/favicon.png"
+          href="./assets/icon/favicon.png"
           type="image/x-icon"
         />
-        <link
-          rel="apple-touch-icon"
-          href="https://adrianastiglianoarte.netlify.app/build/favicon.png"
-        />
+        <link rel="apple-touch-icon" href="./assets/icon/favicon.png" />
         <meta name="theme-color" content="#e0aaff" />
 
         <meta name="twitter:card" content="summary" />

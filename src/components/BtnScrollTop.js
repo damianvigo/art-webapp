@@ -4,8 +4,8 @@ const BtnScrollTopStyled = styled.button`
   position: fixed;
   bottom: 1vh;
   right: 1vw;
-  width: 4rem;
-  height: 4rem;
+  width: var(--step-4);
+  height: var(--step-4);
   line-height: 1rem;
   border-radius: 50%;
   font-size: 2rem;

@@ -10,17 +10,17 @@ const Btn = styled.button`
   background-color: var(--high-black-alpha-color);
   svg {
     position: fixed;
-    width: 2.5rem;
-    height: 2.5rem;
-    left: 5vw;
+    width: var(--step-4);
+    height: var(--step-4);
+    left: 3vw;
     bottom: 9vh;
     transition: opacity 0.5s ease-out;
     :hover {
       opacity: 0.8;
     }
     @media screen and (min-width: 1024px) {
-      width: 4rem;
-      height: 4rem;
+      /*     width: 4rem;
+      height: 4rem; */
       bottom: 2vh;
       left: 2vw;
     }

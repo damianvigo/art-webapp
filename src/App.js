@@ -16,8 +16,6 @@ import BtnDarkMode from './components/BtnDarkMode';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle } from './components/CreateGlobalStyle';
 
-import paint from './assets/icon/paint.png';
-
 AOS.init({
   duration: 1500,
 });
@@ -37,30 +35,24 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="shortcut icon" href={paint} type="image/x-icon" />
         <meta
           name="description"
-          content="Hola bienvenid@ a mi Portafolio Profesional, soy Damián Vigo, Desarrollador Web"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <link
-          rel="canonical"
-          href="https://damianvigo.github.io/portfolio-cv"
-        />
-        {/*      <link
-          rel="favicon"
-          href="https://damianvigo.github.io/portfolio-cv/src/assets/icons/favicon.ico"
-        /> */}
+        <link rel="canonical" href="https://adrianastigliano.netlify.app" />
+        <link rel="shortcut icon" href="" type="image/x-icon" />
         <link
           rel="apple-touch-icon"
-          href="https://damianvigo.github.io/portfolio-cv/src/assets/icons/favicon.ico"
+          href="https://adrianastigliano.netlify.app/"
         />
-        <meta name="theme-color" content="#d9006" />
+        <meta name="theme-color" content="#e0aaff" />
+
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
           name="twitter:title"
-          content="Portafolio CV - damianvigo"
+          content="Portafolio Artístico Adriana Stigliano"
         />
         <meta
           property="og:image"
@@ -75,7 +67,7 @@ function App() {
         <meta
           property="og:description"
           name="twitter:description"
-          content="Hola bienvenid@ a mi Portafolio Profesional, soy Damián Vigo. Desarrollador Web"
+          content="Portafolio Artístico Adriana Stigliano"
         />
       </Helmet>
       <GlobalStyle />

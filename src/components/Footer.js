@@ -72,8 +72,15 @@ const ContainerIcons = styled.div`
     svg {
       margin-left: 0.5rem;
       transition: filter 0.3s ease;
-      :hover {
-        filter: sepia(0.75);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    div {
+      svg {
+        :hover {
+          filter: sepia(0.75);
+        }
       }
     }
   }

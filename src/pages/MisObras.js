@@ -241,6 +241,10 @@ const MisObras = () => {
     <>
       <Helmet>
         <title>Mis Obras</title>
+        <meta
+          name="description"
+          content="En esta sección estás véras mis pinturas al óleo"
+        />
       </Helmet>
       <Header />
       <main className={theme}>

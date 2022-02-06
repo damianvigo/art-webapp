@@ -13,6 +13,10 @@ const Contacto = () => {
     <>
       <Helmet>
         <title>Contacto</title>
+        <meta
+          name="description"
+          content="En esta sección esta mi formulario para que nos pongamos en contacto"
+        />
       </Helmet>
       <Header />
       <main>

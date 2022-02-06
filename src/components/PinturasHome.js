@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useModal } from '../hooks/useModal';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import CardsHome from './CardsHome';
 import Modal from './Modal';
 import { v4 as uuidv4 } from 'uuid';

@@ -1,11 +1,13 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import MisObras from './pages/MisObras';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import ico from './assets/icon/favicon.ico';
+import homeImg from './assets/img/homeImg.jpg';
+import { Helmet } from 'react-helmet';
 import BtnScrollTop from './components/BtnScrollTop';
 import useScrollTop from './hooks/useScrollTop';
 import ScrollToTop from './components/ScrollToTop';
@@ -25,7 +27,29 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <HashRouter>
+      <Helmet>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+        />
+        <link
+          rel="apple-touch-icon"
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+        />
+        <meta name="theme-color" content="#e0aaff" />
+        <meta
+          property="og:image"
+          name="twitter:image"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
+        <meta
+          property="og:url"
+          name="twitter:url"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
+      </Helmet>
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home theme={theme} />} />
@@ -34,7 +58,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <BtnScrollTop
         toTop={toTop}
         scrollTop={scrollTop}

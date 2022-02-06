@@ -40,8 +40,8 @@ function App() {
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
         <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
-        <link rel="favicon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="favicon" href="https://i.imgur.com/1XnfwoF.png" />
+        <link rel="apple-touch-icon" href="https://i.imgur.com/1XnfwoF.png" />
         <meta name="theme-color" content="#e0aaff" />
 
         <meta name="twitter:card" content="summary" />
@@ -51,8 +51,16 @@ function App() {
           name="twitter:title"
           content="Portafolio Artístico Adriana Stigliano"
         />
-        <meta property="og:image" name="twitter:image" content="/home.jpg" />
-        <meta property="og:url" name="twitter:url" content="/home.jpg" />
+        <meta
+          property="og:image"
+          name="twitter:image"
+          content="https://i.imgur.com/wiGrmK5.jpg"
+        />
+        <meta
+          property="og:url"
+          name="twitter:url"
+          content="https://i.imgur.com/wiGrmK5.jpg"
+        />
         <meta
           property="og:description"
           name="twitter:description"

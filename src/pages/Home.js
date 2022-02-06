@@ -17,7 +17,7 @@ const Home = ({ theme }) => {
   return (
     <>
       <Helmet>
-        <title>Bienvenida@</title>
+        <title>Bienvenid@</title>
       </Helmet>
       <Header />
       <main>

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import ThemeContext from '../context/ThemeContext';
 import './Modal.css';
 

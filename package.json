@@ -1,6 +1,8 @@
 {
   "name": "arte-webapp",
   "version": "0.1.0",
+  "author": "Damian Vigo <damiandanielvigo@gmail.com> (https://damianvigo.com)",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",

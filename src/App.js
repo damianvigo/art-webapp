@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import MisObras from './pages/MisObras';
 import Contacto from './pages/Contacto';
 import Error404 from './pages/Error404';
+import ico from './assets/icon/favicon.ico';
+import homeImg from './assets/img/homeImg.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -40,8 +42,8 @@ function App() {
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
         <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
-        <link rel="favicon" href="https://i.imgur.com/1XnfwoF.png" />
-        <link rel="apple-touch-icon" href="https://i.imgur.com/1XnfwoF.png" />
+        <link rel="icon" type="image/x-icon" href={ico} />
+        <link rel="apple-touch-icon" href={ico} />
         <meta name="theme-color" content="#e0aaff" />
 
         <meta name="twitter:card" content="summary" />
@@ -51,16 +53,8 @@ function App() {
           name="twitter:title"
           content="Portafolio Artístico Adriana Stigliano"
         />
-        <meta
-          property="og:image"
-          name="twitter:image"
-          content="https://i.imgur.com/wiGrmK5.jpg"
-        />
-        <meta
-          property="og:url"
-          name="twitter:url"
-          content="https://i.imgur.com/wiGrmK5.jpg"
-        />
+        <meta property="og:image" name="twitter:image" content={homeImg} />
+        <meta property="og:url" name="twitter:url" content={homeImg} />
         <meta
           property="og:description"
           name="twitter:description"

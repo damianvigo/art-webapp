@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ico from './assets/icon/favicon.ico';
 import Home from './pages/Home';
 import MisObras from './pages/MisObras';
@@ -50,7 +50,7 @@ function App() {
         />
       </Helmet>
       <GlobalStyle />
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="" element={<Home theme={theme} />} />
@@ -59,7 +59,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <BtnScrollTop
         toTop={toTop}
         scrollTop={scrollTop}

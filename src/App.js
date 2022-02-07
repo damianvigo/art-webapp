@@ -14,6 +14,7 @@ import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
 import { GlobalStyle } from './components/CreateGlobalStyle';
 import { Helmet } from 'react-helmet';
+import homeImg from './assets/img/homeImg.jpg';
 
 AOS.init({
   duration: 1500,
@@ -39,6 +40,24 @@ function App() {
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
           rel="stylesheet"
+        />
+        <meta property="og:image" name="twitter:image" content={homeImg} />
+        <meta property="og:url" name="twitter:url" content={homeImg} />
+        <meta
+          name="description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          name="twitter:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta
+          property="og:description"
+          name="twitter:description"
+          content="Artista Plástica"
         />
       </Helmet>
       <HashRouter>

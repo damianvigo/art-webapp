@@ -13,6 +13,7 @@ import { useContext } from 'react';
 import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
 import { GlobalStyle } from './components/CreateGlobalStyle';
+import homeImg from './assets/img/homeImg.jpg';
 import { Helmet } from 'react-helmet';
 /* import homeImg from './assets/img/homeImg.jpg'; */
 
@@ -92,7 +93,61 @@ function App() {
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home theme={theme} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Helmet>
+                  <title>Portafolio Artístico | Adriana Stigliano</title>
+                  <meta
+                    name="title"
+                    content="Portafolio Artístico | Adriana Stigliano"
+                  />
+                  <meta
+                    name="description"
+                    content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+                  />
+
+                  <meta property="og:type" content="website" />
+                  <meta
+                    property="og:url"
+                    content={`https://adrianastiglianoarte.netlify.app`}
+                  />
+                  <meta
+                    property="og:title"
+                    content="Portafolio Artístico | Adriana Stigliano"
+                  />
+                  <meta
+                    property="og:description"
+                    content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+                  />
+                  <meta
+                    property="og:image"
+                    content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+                  />
+
+                  <meta property="twitter:card" content="summary_large_image" />
+                  <meta
+                    property="twitter:url"
+                    content={`https://adrianastiglianoarte.netlify.app`}
+                  />
+                  <meta
+                    property="twitter:title"
+                    content="Portafolio Artístico | Adriana Stigliano"
+                  />
+                  <meta
+                    property="twitter:description"
+                    content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+                  />
+                  <meta
+                    property="twitter:image"
+                    content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+                  />
+                </Helmet>
+                <Home theme={theme} />
+              </>
+            }
+          />
           {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />

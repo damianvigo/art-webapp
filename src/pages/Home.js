@@ -24,18 +24,21 @@ const Home = ({ theme }) => {
           name="description"
           content="Hola bienvenid@ a mi Portafolio artístico"
         />
-        <meta name="twitter:card" content="summary" />
-        <meta property="og:type" content="website" />
+        {/*     <meta name="twitter:card" content="summary" /> */}
+        <meta name="og:type" content="website" />
         <meta
-          property="og:title"
-          name="twitter:title"
+          name="og:title"
+          /*       name="twitter:title" */
           content="Portafolio Artístico | Adriana Stigliano"
         />
-        <meta property="og:image" name="twitter:image" content={`${homeImg}`} />
         <meta
-          property="og:url"
-          name="twitter:url"
-          content={`https://adrianastiglianoarte.netlify.app`}
+          name="og:image"
+          /* name="twitter:image" */ content={`${homeImg}`}
+        />
+        <meta
+          name="og:url"
+          /*        name="twitter:url" */
+          content={`https://adrianastiglianoarte.netlify.app#`}
         />
       </Helmet>
       <Header />

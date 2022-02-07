@@ -9,12 +9,13 @@ import 'aos/dist/aos.css';
 import BtnScrollTop from './components/BtnScrollTop';
 import useScrollTop from './hooks/useScrollTop';
 import ScrollToTop from './components/ScrollToTop';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
+import homeImg from './assets/img/homeImg.jpg';
 import { GlobalStyle } from './components/CreateGlobalStyle';
 import ico from './assets/icon/favicon.ico';
-import homeImg from './assets/img/homeImg.jpg';
+
 import { Helmet } from 'react-helmet';
 
 /* import homeImg from './assets/img/homeImg.jpg'; */
@@ -43,6 +44,25 @@ function App() {
         />
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
+        <title>Portafolio Artístico | Adriana Stigliano</title>
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta
+          property="description"
+          content="Hola bienvenid@ a mi Portafolio artístico"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="og:type" content="website" />
+        <meta
+          property="og:title"
+          name="twitter:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta property="og:image" name="twitter:image" content={`${homeImg}`} />
+        <meta
+          property="og:url"
+          name="twitter:url"
+          content="https://adrianastiglianoarte.netlify.app"
+        />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

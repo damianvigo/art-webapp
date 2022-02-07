@@ -24,37 +24,6 @@ AOS.init({
 });
 
 function App() {
-  useEffect(() => {
-    document.head.innerHTML += `
-    <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
-    <meta
-      name="description"
-      content="Hola bienvenid@ a mi Portafolio artístico"
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      name="twitter:title"
-      content="Portafolio Artístico | Adriana Stigliano"
-    />
-    <meta
-      property="og:description"
-      name="twitter:description"
-      content="Hola bienvenid@ a mi Portafolio artístico"
-    />
-    <meta
-      property="og:image"
-      name="twitter:image"
-      content='https://adrianastiglianoarte.netlify.app${homeImg}'
-    />
-    <meta
-      property="og:url"
-      name="twitter:url"
-      content="https://adrianastiglianoarte.netlify.app"
-    />`;
-  }, []);
-
   const { theme } = useContext(ThemeContext);
 
   const { toTop, scrollTop, setScrollTop } = useScrollTop();
@@ -75,7 +44,7 @@ function App() {
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
         <title>Portafolio Artístico | Adriana Stigliano</title>
-        {/*      <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
         <meta
           name="description"
           content="Hola bienvenid@ a mi Portafolio artístico"
@@ -100,8 +69,8 @@ function App() {
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app"
-        /> */}
+          content="https://adrianastiglianoarte.netlify.app/#/"
+        />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

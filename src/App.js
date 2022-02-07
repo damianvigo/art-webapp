@@ -64,12 +64,12 @@ function App() {
         <meta
           property="og:image"
           name="twitter:image"
-          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}${homeImg}`}
         />
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app/#/"
+          content={`https://adrianastiglianoarte.netlify.app/${window.location.hash}/`}
         />
       </Helmet>
       <HashRouter>

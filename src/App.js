@@ -31,46 +31,67 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
-        <meta name="theme-color" content="#e0aaff" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="icon" type="image/x-icon" href={ico} />
-        <link rel="apple-touch-icon" href={ico} />
-        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="og:type" content="website" />
-        <meta
-          property="og:title"
-          name="twitter:title"
-          content="Artista Plástica | Adriana Stigliano"
-        />
-        <meta
-          property="description"
-          content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
-        />
-        <meta
-          property="og:image"
-          name="twitter:image"
-          content="https://i.imgur.com/OkR2OTl.jpg"
-        />
-        <meta
-          property="og:url"
-          name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app"
-        />
-      </Helmet>
+
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home theme={theme} />} />
+          <Route
+            path=""
+            element={
+              <>
+                <Home theme={theme} />
+                <Helmet>
+                  <meta charset="UTF-8" />
+                  <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                  />
+                  <link
+                    rel="canonical"
+                    href="https://adrianastiglianoarte.netlify.app"
+                  />
+                  <meta name="theme-color" content="#e0aaff" />
+                  <link rel="preconnect" href="https://fonts.googleapis.com" />
+                  <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossorigin
+                  />
+                  <link
+                    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+                    rel="stylesheet"
+                  />
+                  <link rel="icon" type="image/x-icon" href={ico} />
+                  <link rel="apple-touch-icon" href={ico} />
+                  <meta
+                    name="title"
+                    content="Portafolio Artístico | Adriana Stigliano"
+                  />
+                  <meta name="twitter:card" content="summary" />
+                  <meta name="og:type" content="website" />
+                  <meta
+                    property="og:title"
+                    name="twitter:title"
+                    content="Artista Plástica | Adriana Stigliano"
+                  />
+                  <meta
+                    property="description"
+                    content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
+                  />
+                  <meta
+                    property="og:image"
+                    name="twitter:image"
+                    content="https://i.imgur.com/OkR2OTl.jpg"
+                  />
+                  <meta
+                    property="og:url"
+                    name="twitter:url"
+                    content="https://adrianastiglianoarte.netlify.app"
+                  />
+                </Helmet>
+              </>
+            }
+          />
           {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />

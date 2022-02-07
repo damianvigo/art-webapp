@@ -4,8 +4,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import PinturasHome from '../components/PinturasHome';
-import { Helmet } from 'react-helmet';
-import homeImg from '../assets/img/homeImg.jpg';
 
 const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   title = '¡Hola! Soy Adriana Stigliano',

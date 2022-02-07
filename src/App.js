@@ -56,7 +56,7 @@ function App() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
+          content={`https://adrianastiglianoarte.netlify.app${window.location}`}
         />
         <meta
           property="og:title"
@@ -74,7 +74,7 @@ function App() {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
+          content={`https://adrianastiglianoarte.netlify.app${window.location}`}
         />
         <meta
           property="twitter:title"

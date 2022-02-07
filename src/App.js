@@ -56,7 +56,7 @@ function App() {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://adrianastiglianoarte.netlify.app/"
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
         />
         <meta
           property="og:title"
@@ -66,12 +66,15 @@ function App() {
           property="og:description"
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <meta property="og:image" content={homeImg} />
+        <meta
+          property="og:image"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app/"
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
         />
         <meta
           property="twitter:title"
@@ -81,7 +84,10 @@ function App() {
           property="twitter:description"
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <meta property="twitter:image" content={homeImg} />
+        <meta
+          property="twitter:image"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

@@ -64,7 +64,7 @@ function App() {
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app/#//"
+          content="https://adrianastiglianoarte.netlify.app/#/"
         />
       </Helmet>
       <HashRouter>

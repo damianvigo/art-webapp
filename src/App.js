@@ -44,13 +44,12 @@ function App() {
         />
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
-        {/*         <title>Portafolio Artístico | Adriana Stigliano</title>
-        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" /> */}
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
       </Helmet>
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home theme={theme} />} />
+          <Route path="" element={<Home theme={theme} />} />
           {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />

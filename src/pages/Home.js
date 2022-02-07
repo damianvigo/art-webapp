@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeroImage from '../components/HeroImage';
 import PinturasHome from '../components/PinturasHome';
+import { Helmet } from 'react-helmet';
+import homeImg from '../assets/img/homeImg.jpg';
 
 const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   title = '¡Hola! Soy Adriana Stigliano',
@@ -15,6 +17,27 @@ const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
 const Home = ({ theme }) => {
   return (
     <>
+      <Helmet>
+        <title>Portafolio Artístico | Adriana Stigliano</title>
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta
+          name="description"
+          content="Hola bienvenid@ a mi Portafolio artístico"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          name="twitter:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta property="og:image" name="twitter:image" content={`${homeImg}`} />
+        <meta
+          property="og:url"
+          name="twitter:url"
+          content={`https://adrianastiglianoarte.netlify.app`}
+        />
+      </Helmet>
       <Header />
       <main>
         <HeroImage

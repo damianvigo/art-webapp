@@ -41,24 +41,47 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
-        <meta property="og:image" name="twitter:image" content={homeImg} />
-        <meta property="og:url" name="twitter:url" content={homeImg} />
+        {/*         <meta
+          property="og:url"
+          name="twitter:url"
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
+        /> */}
+        <title>Portafolio Artístico | Adriana Stigliano</title>
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
         <meta
           name="description"
           content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
-        <meta name="twitter:card" content="summary" />
+
         <meta property="og:type" content="website" />
         <meta
+          property="og:url"
+          content="https://adrianastiglianoarte.netlify.app/"
+        />
+        <meta
           property="og:title"
-          name="twitter:title"
           content="Portafolio Artístico | Adriana Stigliano"
         />
         <meta
           property="og:description"
-          name="twitter:description"
-          content="Artista Plástica"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
         />
+        <meta property="og:image" content={homeImg} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://adrianastiglianoarte.netlify.app/"
+        />
+        <meta
+          property="twitter:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta
+          property="twitter:description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+        />
+        <meta property="twitter:image" content={homeImg} />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

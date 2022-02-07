@@ -45,11 +45,32 @@ function App() {
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
         <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="og:type" content="website" />
+        <meta
+          property="og:title"
+          name="twitter:title"
+          content="Artista Plástica | Adriana Stigliano"
+        />
+        <meta
+          property="description"
+          content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
+        />
+        <meta
+          property="og:image"
+          name="twitter:image"
+          content="https://i.imgur.com/OkR2OTl.jpg"
+        />
+        <meta
+          property="og:url"
+          name="twitter:url"
+          content="https://adrianastiglianoarte.netlify.app"
+        />
       </Helmet>
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="" element={<Home theme={theme} />} />
+          <Route path="/" element={<Home theme={theme} />} />
           {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />

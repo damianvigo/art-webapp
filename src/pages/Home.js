@@ -15,52 +15,52 @@ const backgroundImage = 'https://i.imgur.com/wiGrmK5.jpg',
   banner = 'https://i.imgur.com/Veoqbq1.jpg';
 
 const Home = ({ theme }) => {
-  <Helmet>
-    <title>Portafolio Artístico | Adriana Stigliano</title>
-    <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
-    <meta
-      name="description"
-      content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
-    />
-
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`https://adrianastiglianoarte.netlify.app${window.location}`}
-    />
-    <meta
-      property="og:title"
-      content="Portafolio Artístico | Adriana Stigliano"
-    />
-    <meta
-      property="og:description"
-      content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
-    />
-    <meta
-      property="og:image"
-      content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-    />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content={`https://adrianastiglianoarte.netlify.app${window.location}`}
-    />
-    <meta
-      property="twitter:title"
-      content="Portafolio Artístico | Adriana Stigliano"
-    />
-    <meta
-      property="twitter:description"
-      content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
-    />
-    <meta
-      property="twitter:image"
-      content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-    />
-  </Helmet>;
   return (
     <>
+      <Helmet>
+        <title>Portafolio Artístico | Adriana Stigliano</title>
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta
+          name="description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
+        />
+        <meta
+          property="og:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta
+          property="og:description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+        />
+        <meta
+          property="og:image"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content={`https://adrianastiglianoarte.netlify.app${window.location.hash}`}
+        />
+        <meta
+          property="twitter:title"
+          content="Portafolio Artístico | Adriana Stigliano"
+        />
+        <meta
+          property="twitter:description"
+          content="Hola bienvenid@ a mi portafolio artístico Soy Adriana Stigliano, Artista Plástica"
+        />
+        <meta
+          property="twitter:image"
+          content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
+        />
+      </Helmet>
       <Header />
       <main>
         <HeroImage

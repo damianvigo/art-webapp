@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import ico from './assets/icon/favicon.ico';
 import Home from './pages/Home';
 import MisObras from './pages/MisObras';
@@ -89,7 +89,7 @@ function App() {
           content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
         /> */}
       </Helmet>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home theme={theme} />} />
@@ -98,7 +98,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <BtnScrollTop
         toTop={toTop}
         scrollTop={scrollTop}

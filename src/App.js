@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ico from './assets/icon/favicon.ico';
 import Home from './pages/Home';
 import MisObras from './pages/MisObras';
@@ -14,7 +14,7 @@ import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
 import { GlobalStyle } from './components/CreateGlobalStyle';
 import { Helmet } from 'react-helmet';
-import homeImg from './assets/img/homeImg.jpg';
+/* import homeImg from './assets/img/homeImg.jpg'; */
 
 AOS.init({
   duration: 1500,
@@ -54,7 +54,7 @@ function App() {
         />
 
         <meta property="og:type" content="website" />
-        <meta
+        {/*         <meta
           property="og:url"
           content={`https://adrianastiglianoarte.netlify.app${window.location}`}
         />
@@ -87,9 +87,9 @@ function App() {
         <meta
           property="twitter:image"
           content={`https://adrianastiglianoarte.netlify.app${homeImg}`}
-        />
+        /> */}
       </Helmet>
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home theme={theme} />} />
@@ -98,7 +98,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <BtnScrollTop
         toTop={toTop}
         scrollTop={scrollTop}

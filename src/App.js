@@ -44,10 +44,10 @@ function App() {
         />
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
-        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
+        <meta name="title" content="Artista Plástica | Adriana Stigliano" />
         <meta
           name="description"
-          content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
+          content="¡Hola! 🖐️ Bienvenida/o a mi página web artística ✨ aquí verás todas mis obras 🎨💓"
         />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />

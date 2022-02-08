@@ -80,6 +80,7 @@ const CardsHomeStyled = styled.section`
     justify-content: space-around;
     align-content: center;
     img {
+      cursor: pointer;
       height: 400px;
       object-fit: cover;
       object-position: 50% 50%;

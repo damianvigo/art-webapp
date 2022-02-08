@@ -488,6 +488,7 @@ const MisObrasContainer = styled.div`
 
   @media screen and (min-width: 600px) {
     article figure img {
+      cursor: pointer;
       height: 300px;
       object-fit: cover;
       object-position: 50% 50%;

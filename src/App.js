@@ -58,27 +58,6 @@ function App() {
         <meta name="MobileOptimized" content="width" />
         <meta name="HandheldFriendly" content="true" />
         <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="og:type" content="website" />
-        <meta
-          property="og:title"
-          name="twitter:title"
-          content="Artista Plástica | Adriana Stigliano"
-        />
-        <meta
-          property="og:description"
-          content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
-        />
-        <meta
-          property="og:image"
-          name="twitter:image"
-          content="https://i.imgur.com/OkR2OTl.jpg"
-        />
-        <meta
-          property="og:url"
-          name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app"
-        />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

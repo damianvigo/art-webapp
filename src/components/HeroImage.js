@@ -273,7 +273,7 @@ const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
               <HeroImageSubtitle data-aos="zoom-in">
                 {subtitle}
               </HeroImageSubtitle>
-              <Btn two />
+              <Btn two route="/contacto" />
             </HeroImageContent>
           </HeroImageOpacity>
         </HeroImageStyled>

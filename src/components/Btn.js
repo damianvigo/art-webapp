@@ -3,10 +3,10 @@ import styled, { css } from 'styled-components';
 
 const BtnStyled = styled.button`
   /* General Styles */
-  display: inline-grid;
+  display: inline-block;
   position: relative;
   top: ${({ topBtn }) => topBtn};
-  width: clamp(200px, 20vw, 400px);
+  width: clamp(200px, 20vw, 300px);
   padding: 1rem;
   background-color: var(--second-alpha-color);
   color: var(--first-color);
@@ -74,7 +74,7 @@ const BtnStyled = styled.button`
         z-index: 1;
         top: -200px;
         left: 0;
-        background-color: #18a362;
+        background-color: var(--second-color);
 
         transition: all 0.4s ease-in-out;
         border-radius: 0px 0px 300px 300px;
@@ -175,11 +175,28 @@ const BtnStyled = styled.button`
     `}
 `;
 
-const Btn = ({ one, two, three, four, five, six, submit, enviar, topBtn }) => {
+const Btn = ({
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  submit,
+  enviar,
+  topBtn,
+  txt,
+  route,
+}) => {
   console.log(topBtn);
+  console.log(route);
+
   return (
     <>
-      <Link style={{ textDecoration: 'none' }} to="/contacto">
+      <Link
+        style={{ textDecoration: 'none' }}
+        to={route ? '/contacto' : '/mis-obras'}
+      >
         {one && (
           <BtnStyled one /* data-aos="fade-up" data-aos-duration="3000" */>
             <span>Contactame</span>
@@ -192,7 +209,7 @@ const Btn = ({ one, two, three, four, five, six, submit, enviar, topBtn }) => {
         )}
         {three && (
           <BtnStyled three /* data-aos="fade-up" data-aos-duration="3000" */>
-            <span>Contactame</span>
+            <span>{txt}</span>
           </BtnStyled>
         )}
         {four && (

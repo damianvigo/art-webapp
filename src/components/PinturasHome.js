@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CardsHome from './CardsHome';
 import Modal from './Modal';
 import { v4 as uuidv4 } from 'uuid';
+import Btn from './Btn';
 
 const initialDbHome = [
   {
@@ -34,6 +35,11 @@ const CardsHomeSection = styled.section`
   }
 `;
 
+const ContainerBtn = styled.div`
+  text-align: center;
+  padding: 4rem;
+`;
+
 const CardsHomeStyled = styled.section`
   text-align: center;
   article {
@@ -43,7 +49,7 @@ const CardsHomeStyled = styled.section`
     margin: 2rem auto;
     border: thin solid var(--text-color);
     border: ${({ theme }) => {
-      console.log(theme);
+      // console.log(theme);
       if (theme === 'dark') {
         return 'thin solid var(--white-color)';
       } else {
@@ -104,6 +110,9 @@ const PinturasHome = ({ theme }) => {
           isOpenModal={isOpenModal}
         />
       </CardsHomeStyled>
+      <ContainerBtn>
+        <Btn to="/mis-obras" three txt="ver más" />
+      </ContainerBtn>
       {idModal && (
         <Modal
           idModal={idModal}

@@ -44,6 +44,19 @@ function App() {
         />
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
+        <meta
+          name="description"
+          content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
+        />
+        <meta name="robots" content="index" />
+        <meta name="robots" content="follow" />
+        <meta name="author" content="Damian Vigo" />
+        <meta
+          name="keywords"
+          content="arte, art, oleo, óleo, acrilico, acrílico, pinturas, tela, obra, obras"
+        />
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
         <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
         <meta name="twitter:card" content="summary" />
         <meta name="og:type" content="website" />
@@ -64,7 +77,7 @@ function App() {
         <meta
           property="og:url"
           name="twitter:url"
-          content="https://adrianastiglianoarte.netlify.app/#/"
+          content="https://adrianastiglianoarte.netlify.app"
         />
       </Helmet>
       <HashRouter>

@@ -18,7 +18,7 @@ const CardsMisObras = ({ el, isOpenModal, setIdModal }) => {
         <figure onClick={isOpenModal}>
           <img onClick={() => setIdModal(id)} src={img} alt="" />
         </figure>
-        <h4>{titleCard}</h4>
+        <h2>{titleCard}</h2>
         <p>{description}</p>
       </article>
     </>

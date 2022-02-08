@@ -44,6 +44,7 @@ function App() {
         />
         <link rel="icon" type="image/x-icon" href={ico} />
         <link rel="apple-touch-icon" href={ico} />
+        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
         <meta
           name="description"
           content="Hola bienvenida/o a mi portafolio artístico donde verás todas mis obras"
@@ -57,7 +58,6 @@ function App() {
         />
         <meta name="MobileOptimized" content="width" />
         <meta name="HandheldFriendly" content="true" />
-        <meta name="title" content="Portafolio Artístico | Adriana Stigliano" />
       </Helmet>
       <HashRouter>
         <ScrollToTop />

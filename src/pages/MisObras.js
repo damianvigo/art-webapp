@@ -429,15 +429,16 @@ const initialDbMisObras = [
   },
 ];
 
-const TitleMisObras = styled.div`
+export const TitleMisObras = styled.div`
   margin: 0 auto;
   border-bottom: thin solid var(--black-color);
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: var(--third-alpha-color);
+  text-align: center;
 `;
 
-const MisObrasSection = styled.section`
+export const MisObrasSection = styled.section`
   background-color: var(--first-alpha-color);
   border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);

@@ -18,6 +18,7 @@ import ico from './assets/icon/favicon.ico';
 import { Helmet } from 'react-helmet';
 import NetworkStatus from './components/NetworkStatus';
 import useNetworkStatus from './hooks/useNetworkStatus';
+import Exposiciones from './components/Exposiciones';
 
 /* import homeImg from './assets/img/homeImg.jpg'; */
 
@@ -80,7 +81,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home theme={theme} />} />
-          {/* <Route path="/exposiciones" element={<Exposiciones />} /> */}
+          <Route path="/exposiciones" element={<Exposiciones />} />
           <Route path="/mis-obras" element={<MisObras />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<Error404 />} />

@@ -108,6 +108,12 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
+        to="/exposiciones"
+      >
+        Exposiciones
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'active' : '')}
         to="/contacto"
       >
         Contacto

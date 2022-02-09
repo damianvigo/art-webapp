@@ -21,13 +21,13 @@ export const GlobalStyle = createGlobalStyle`
   --black-color: #000;
   --link-color: #240046;
   --title-color: #333;
-  --text-color: #222;
+  --text-color: #222; // usando
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.75); // usando
   --high-black-alpha-color: rgba(0, 0, 0, 0.9);
   --active: #e0aaff;
-  --form-ok-color: #4caf50;
-  --form-error-color: #f44336;
+  --ok-color: #4caf50;
+  --error-color: #f44336;
   --font: 'Lato', sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;

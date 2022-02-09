@@ -9,14 +9,15 @@ import 'aos/dist/aos.css';
 import BtnScrollTop from './components/BtnScrollTop';
 import useScrollTop from './hooks/useScrollTop';
 import ScrollToTop from './components/ScrollToTop';
-import { useContext } from 'react';
+import { createRef, useContext, useEffect } from 'react';
 import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
-import homeImg from './assets/img/homeImg.jpg';
 import { GlobalStyle } from './components/CreateGlobalStyle';
 import ico from './assets/icon/favicon.ico';
 
 import { Helmet } from 'react-helmet';
+import NetworkStatus from './components/NetworkStatus';
+import useNetworkStatus from './hooks/useNetworkStatus';
 
 /* import homeImg from './assets/img/homeImg.jpg'; */
 
@@ -28,6 +29,8 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   const { toTop, scrollTop, setScrollTop } = useScrollTop();
+  const [isOnline] = useNetworkStatus();
+
   return (
     <>
       <GlobalStyle />
@@ -42,12 +45,19 @@ function App() {
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/x-icon" href={ico} />
-        <link rel="apple-touch-icon" href={ico} />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+        />
+        <link
+          rel="apple-touch-icon"
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+        />
         <meta name="title" content="Artista Plástica | Adriana Stigliano" />
         <meta
           name="description"
-          content="¡Hola! 🖐️ Bienvenida/o a mi página web artística ✨ aquí verás todas mis obras 🎨💓"
+          content="¡Hola! Bienvenida/o a mi página web artística aquí verás todas mis obras"
         />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />
@@ -59,6 +69,13 @@ function App() {
         <meta name="MobileOptimized" content="width" />
         <meta name="HandheldFriendly" content="true" />
       </Helmet>
+      {isOnline && (
+        <NetworkStatus
+          conect="var(--second-color);"
+          down="Conexión Perdida"
+          up="La conexión se ha restablecido"
+        />
+      )}
       <HashRouter>
         <ScrollToTop />
         <Routes>

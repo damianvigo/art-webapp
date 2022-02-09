@@ -250,7 +250,7 @@ const HeroImage = ({ backgroundImage, title, subtitle, contact }) => {
                   {errors.comments && (
                     <MessageErrorForm errorComment={errors.comments} />
                   )}
-                  <Btn submit="submit" five enviar="Enviar" topBtn={'5vh'} />
+                  <Btn submit="submit" five enviar="Enviar" topBtn="5vh" />
                 </FormStyled>
                 {loading && <Loader />}
                 {response && (

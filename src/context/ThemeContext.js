@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 // console.log(ThemeContext);
 
-const initialTheme = JSON.parse(localStorage.getItem('theme')) || [];
+const initialTheme = JSON.parse(localStorage.getItem('theme')) || '';
 
 const initialBtnIcon = JSON.parse(localStorage.getItem('btnIcon') || false);
 

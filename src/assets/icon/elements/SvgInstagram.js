@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const SvgInstagram = (props) => (
   <a
-    href="https://www.facebook.com/adriana.stigliano"
+    href="https://www.instagram.com/arteadrianastigliano/"
     target="_blank"
     rel="noreferrer"
   >

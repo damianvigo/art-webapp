@@ -1,5 +1,4 @@
 import HeroImage from './HeroImage';
-import Btn from './Btn';
 
 const Main = () => {
   return (

@@ -10,20 +10,31 @@ const BannerStyled = styled.article`
 
 const BanerStyledOpacity = styled.div`
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   background-color: var(--black-alpha-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 const BannerStyledContainer = styled.div`
-  width: 80vw;
-  text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 1rem;
+  line-height: 1rem;
+  width: 100%;
+  height: inherit;
   p {
     color: var(--white-color);
-    font-size: var(--step-1);
+    font-size: var(--step-2);
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 600px) {
+    p {
+      text-align: center;
+      line-height: var(--step-4);
+      line-height: 1.8;
+    }
   }
 `;
 
@@ -32,7 +43,7 @@ const Banner = ({ banner }) => {
     <>
       <BannerStyled banner={banner}>
         <BanerStyledOpacity>
-          <BannerStyledContainer data-aos="zoom-in-down">
+          <BannerStyledContainer /* data-aos="zoom-in-down" */>
             <p>
               Para mí pintar es vida y a travez de mis trabajos, trato de
               expresar mi sentir en toda su plenitud

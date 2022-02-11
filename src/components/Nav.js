@@ -103,18 +103,27 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/mis-obras"
+        onClick={() =>
+          pathname === '/mis-obras' ? setChangeBtn(!showChangeBtn) : null
+        }
       >
         Mis obras
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/exposiciones"
+        onClick={() =>
+          pathname === '/exposiciones' ? setChangeBtn(!showChangeBtn) : null
+        }
       >
         Exposiciones
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/contacto"
+        onClick={() =>
+          pathname === '/contacto' ? setChangeBtn(!showChangeBtn) : null
+        }
       >
         Contacto
       </NavLink>

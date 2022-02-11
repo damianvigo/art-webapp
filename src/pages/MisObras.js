@@ -484,7 +484,7 @@ const MisObrasContainer = styled.div`
   }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 3rem;
+  gap: 3rem;
 
   @media screen and (min-width: 600px) {
     article figure img {

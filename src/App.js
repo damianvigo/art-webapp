@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import BtnScrollTop from './components/BtnScrollTop';
 import useScrollTop from './hooks/useScrollTop';
 import ScrollToTop from './components/ScrollToTop';
-import { createRef, useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import ThemeContext from './context/ThemeContext';
 import BtnDarkMode from './components/BtnDarkMode';
 import { GlobalStyle } from './components/CreateGlobalStyle';

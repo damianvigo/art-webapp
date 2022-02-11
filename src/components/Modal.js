@@ -25,6 +25,7 @@ const ModalStyled = styled.article`
 const ModalBox = styled.article`
   img {
     width: 100%;
+    max-height: 80vh;
   }
 `;
 
@@ -34,10 +35,12 @@ const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-width: 320px;
-  max-width: 500px;
+  max-width: 80vw;
   overflow-y: auto;
   background-color: var(--white-color);
+  @media screen and (min-width: 992px) {
+    max-width: 900px;
+  }
 `;
 
 const ModalButton = styled.button`
@@ -55,20 +58,29 @@ const ModalButton = styled.button`
   }
 `;
 
-const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
+const Modal = ({
+  isOpen,
+  closeModal,
+  dbHome,
+  idModal,
+  dbExpo,
+  idModalExpo,
+}) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
-  const [modalCard, setModalCard] = useState(dbHome);
+  const [modalCard, setModalCard] = useState();
   const { theme } = useContext(ThemeContext);
 
-  /*   console.log(dbHome);
-  console.log(idModal);
-  console.log(modalCard); */
-
   useEffect(() => {
-    let card = dbHome.filter((el) => el.id === idModal);
-    // console.log(card);
-    setModalCard(card);
-  }, [dbHome, idModal, isOpen]);
+    if (idModal) {
+      let card = dbHome.filter((el) => el.id === idModal);
+      setModalCard(card);
+    }
+
+    if (idModalExpo) {
+      let card = dbExpo.filter((el) => el.id === idModalExpo);
+      setModalCard(card);
+    }
+  }, [dbHome, dbExpo, idModal, idModalExpo, isOpen]);
 
   return (
     <ModalStyled className={`${isOpen && 'is-open'}`} onClick={closeModal}>
@@ -87,11 +99,15 @@ const Modal = ({ isOpen, closeModal, dbHome, idModal }) => {
           </svg>
         </ModalButton>
         <ModalBox className="box-shadow-card">
-          <figure>
-            <img src={modalCard[0].img} alt="" />
-          </figure>
-          <h4>{modalCard[0].titleCard}</h4>
-          <p>{modalCard[0].description}</p>
+          {modalCard && (
+            <>
+              <figure>
+                <img src={modalCard[0].img} alt="" />
+              </figure>
+              <h4>{modalCard[0].titleCard}</h4>
+              <p>{modalCard[0].description}</p>
+            </>
+          )}
         </ModalBox>
       </ModalContainer>
     </ModalStyled>

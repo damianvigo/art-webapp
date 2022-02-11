@@ -68,6 +68,10 @@ body {
   color: var(--text-color);
 }
 
+main {
+  overflow-x: hidden;
+}
+
  /*
 a {
   color: var(--link-color);

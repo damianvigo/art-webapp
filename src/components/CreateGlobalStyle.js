@@ -193,6 +193,10 @@ h6::selection {
   box-shadow: -15px 15px 5px 15px #0008;
 }
 
+.box-shadow-cards-expo {
+  box-shadow: .5rem .5rem 1rem .5rem #00000025;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;

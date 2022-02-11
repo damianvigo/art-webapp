@@ -18,7 +18,7 @@ import ico from './assets/icon/favicon.ico';
 import { Helmet } from 'react-helmet';
 import NetworkStatus from './components/NetworkStatus';
 import useNetworkStatus from './hooks/useNetworkStatus';
-import Exposiciones from './components/Exposiciones';
+import Exposiciones from './pages/Exposiciones';
 
 /* import homeImg from './assets/img/homeImg.jpg'; */
 

@@ -442,7 +442,6 @@ export const MisObrasSection = styled.section`
   background-color: var(--first-alpha-color);
   border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);
-  padding: 7rem 0;
 `;
 
 const MisObrasContainer = styled.div`
@@ -492,7 +491,7 @@ const MisObrasContainer = styled.div`
       cursor: pointer;
       height: 300px;
       object-fit: cover;
-      object-position: 50% 50%;
+      object-position: 50% 0%;
       :hover {
         opacity: 0.5;
       }

@@ -19,7 +19,7 @@ const useScrollTop = () => {
   }, [scrollTop, setScrollTop]);
 
   const toTop = (e) => {
-    if (e.nativeEvent.path[0]) {
+    if (e.target.matches('#btn-scroll') || e.target.matches('#btn-scroll *')) {
       w.scrollTo({
         behavior: 'smooth',
         top: 0,

@@ -40,7 +40,11 @@ const BtnScrollTopStyled = styled.button`
 const BtnScrollTop = ({ scrollTop, toTop }) => {
   return (
     <>
-      <BtnScrollTopStyled onClick={toTop} className={`${scrollTop}`}>
+      <BtnScrollTopStyled
+        onClick={toTop}
+        id="btn-scroll"
+        className={`${scrollTop}`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

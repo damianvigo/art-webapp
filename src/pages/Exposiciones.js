@@ -248,8 +248,6 @@ const dbExpo = [
   },
 ];
 
-console.log(dbExpo);
-
 const Exposiciones = () => {
   const [idModalExpo, setIdModalExpo] = useState('');
   const [isOpen, isOpenModal, closeModal] = useModal();
@@ -267,7 +265,6 @@ const Exposiciones = () => {
       <Header />
       <main>
         <article className="bg">
-          {/* <img className="bg-img" src={img} alt="" /> */}
           <div className="bg-title-container">
             <h1 className="bg-title">Exposiciones</h1>
           </div>

@@ -88,7 +88,6 @@ const Conoceme = ({ theme, resplandor, avatar }) => {
           </p>
           <p className="conoceme-description text-right">
             <strong>
-              {' '}
               Pinto al óleo y al acrílico. Mi temática es variada realizo
               paisajes, retratos, marinas y abstractos.
             </strong>

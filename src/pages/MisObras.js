@@ -519,7 +519,6 @@ const MisObrasContainer = styled.div`
   }
   figure {
     background-color: ${({ theme }) => {
-      console.log(theme);
       if (theme === 'dark') {
         return 'var(--white-color)';
       } else {

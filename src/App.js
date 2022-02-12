@@ -38,7 +38,7 @@ function App() {
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://adrianastiglianoarte.netlify.app" />
+        <link rel="canonical" href="https://adrianastigliano.art" />
         <meta name="theme-color" content="#e0aaff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,16 +49,16 @@ function App() {
         <link
           rel="icon"
           type="image/x-icon"
-          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+          href={`https://adrianastigliano.art${ico}`}
         />
         <link
           rel="apple-touch-icon"
-          href={`https://adrianastiglianoarte.netlify.app${ico}`}
+          href={`https://adrianastigliano.art${ico}`}
         />
         <meta name="title" content="Artista Plástica | Adriana Stigliano" />
         <meta
           name="description"
-          content="¡Hola! Bienvenida/o a mi página web artística aquí verás todas mis obras"
+          content="¡Hola! Bienvenida/o a mi página web artística, aquí verás todas mis obras"
         />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />

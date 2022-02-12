@@ -24,7 +24,7 @@ const HeaderStyled = styled.header`
   }
 
   @media screen and (min-width: 1024px) {
-    position: sticky;
+    position: fixed;
     top: 0;
     height: calc(var(--header-height) - 1rem);
   }

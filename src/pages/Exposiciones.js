@@ -18,6 +18,7 @@ const dbExpo = [
     fadeLeft: 'fade-left',
     duration: '2000',
     easing: 'ease-in',
+    altTitle: 'Adriana y amigas en una exposición de obra de arte',
   },
 
   {
@@ -28,6 +29,7 @@ const dbExpo = [
     fadeRight: 'fade-right',
     duration: '2000',
     easing: 'ease-in',
+    altTitle: 'Adriana en un muestra con un cuadro',
   },
 
   {
@@ -37,6 +39,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomIn: 'zoom-in',
     duration: '2000',
+    altTitle: 'Adriana y amigas en en una exposición de obra de arte',
   },
 
   {
@@ -46,6 +49,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomInLeft: 'zoom-in-left',
     duration: '2000',
+    altTitle: 'Adriana en una exposición de obra de arte',
   },
 
   {
@@ -55,6 +59,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomInRight: 'zoom-in-right',
     duration: '2000',
+    altTitle: ' Adriana junto con dos amigas en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -63,6 +68,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomOut: 'zoom-out',
     duration: '2000',
+    alTitle: 'Adriana en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -71,6 +77,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     fadeUp: 'fade-up',
     duration: '2000',
+    altTitle: 'Adriana recibiendo un certificado de obra de arte',
   },
   {
     id: uuidv4(),
@@ -79,6 +86,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     fadeRight: 'fade-right',
     duration: '2000',
+    altTitle: 'Adriana y amigos en el taller de arte',
   },
   {
     id: uuidv4(),
@@ -87,6 +95,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     fadeLeft: 'fade-left',
     duration: '2000',
+    altTitle: 'Adriana en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -95,6 +104,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     fadeDownRight: 'fade-down-right',
     duration: '3000',
+    altTitle: 'Adriana con una amiga en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -103,6 +113,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2022',
     fadeDownLeft: 'fade-down-left',
     duration: '3000',
+    altTitle: 'Adriana con una amiga en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -111,6 +122,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2019',
     fadeUpRight: 'fade-up-right',
     duration: '3000',
+    altTitle: 'Adriana en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -119,6 +131,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     fadeUpLeft: 'fade-up-left',
     duration: '3000',
+    altTitle: 'Adriana en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -127,14 +140,16 @@ const dbExpo = [
     description: 'Buenos Aires - 2022',
     flipLeft: 'flip-left',
     duration: '3000',
+    altTitle: 'Adriana con amigos en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
     img: 'https://i.imgur.com/z5dvxV3.jpg',
-    titleCard: 'Los Vikingos  Gustavo Linares',
+    titleCard: 'Los Vikingos Gustavo Linares',
     description: 'Buenos Aires - 2019',
     flipRight: 'flip-right',
     duration: '3000',
+    altTitle: 'Adriana con tres amigas en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -143,6 +158,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     flipUp: 'flip-up',
     duration: '3000',
+    altTitle: 'Adriana con una amiga en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -151,6 +167,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2019',
     zoomOutUp: 'zoom-out-up',
     duration: '3000',
+    altTitle: 'Adriana en una exposición de obra de arte',
   },
   {
     id: uuidv4(),
@@ -159,6 +176,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomOutDown: 'zoom-out-down',
     duration: '3000',
+    altTitle: 'Grupo de arte al aire libre pintando',
   },
   {
     id: uuidv4(),
@@ -167,6 +185,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2021',
     zoomOutRight: 'zoom-out-right',
     duration: '3000',
+    altTitle: 'Cuadros al aire libre de los pintores',
   },
   {
     id: uuidv4(),
@@ -175,6 +194,7 @@ const dbExpo = [
     description: 'Buenos Aires - 2022',
     zoomOutLeft: 'zoom-out-left',
     duration: '3000',
+    altTitle: 'Adriana y amigas al aire libre pintando',
   },
   {
     id: uuidv4(),
@@ -184,6 +204,7 @@ const dbExpo = [
     flipDown: 'flip-down',
     easing: 'linear',
     duration: '3000',
+    altTitle: 'Adriana con una amiga exponiendo sus cuadros',
   },
   {
     id: uuidv4(),
@@ -193,6 +214,7 @@ const dbExpo = [
     zoomInLeft: 'zoom-in-left',
     duration: '3000',
     easing: 'ease-in-out',
+    altTitle: 'Adriana con cuatro amigas en una exposición de arte',
   },
   {
     id: uuidv4(),
@@ -202,6 +224,7 @@ const dbExpo = [
     zoomInRight: 'zoom-in-right',
     duration: '3000',
     easing: 'ease-in-out',
+    altTitle: 'Adriana con tres amigas en una exposición de arte',
   },
   {
     id: uuidv4(),
@@ -211,6 +234,7 @@ const dbExpo = [
     flipLeft: 'flip-left',
     duration: '2000',
     easing: 'ease-out-cubic',
+    altTitle: 'Adriana con dos amigas en una exposición de arte',
   },
   {
     id: uuidv4(),
@@ -220,6 +244,7 @@ const dbExpo = [
     zoomIn: 'zoom-in',
     duration: '3000',
     easing: 'ease-in',
+    altTitle: 'Adriana con dos amigos en una exposición de arte',
   },
 ];
 

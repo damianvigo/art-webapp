@@ -49,6 +49,7 @@ html {
   font-family: var(--font);
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -66,10 +67,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text-color);
-}
-
-main {
-  overflow-x: hidden;
 }
 
  /*
@@ -145,10 +142,6 @@ h6::selection {
   background-color: var(--third-alpha-color);
 }
 
-/* small, b {
-  font-size: 1.4rem;
-} */
-
 .step--2 {
     font-size: var(--step--2);
 }
@@ -195,10 +188,6 @@ h6::selection {
 
 .box-shadow-down {
   box-shadow: -15px 15px 5px 15px #0008;
-}
-
-.box-shadow-cards-expo {
-  box-shadow: .5rem .5rem 1rem .5rem #00000025;
 }
 
 .container {

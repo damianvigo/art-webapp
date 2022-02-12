@@ -5,16 +5,18 @@ import CardsHome from './CardsHome';
 import Modal from './Modal';
 import { v4 as uuidv4 } from 'uuid';
 import Btn from './Btn';
+import { useLocation } from 'react-router-dom';
 
 const initialDbHome = [
   {
     id: uuidv4(),
     title: 'Mis Pinturas destacadas',
     img: 'https://i.imgur.com/HWhhrlP.jpg',
-    titleCard: 'Ragnar',
     description: 'Oleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-down-right',
     animateonScrollDuration: '3000',
+    titleCard: 'Ragnar',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -23,6 +25,7 @@ const initialDbHome = [
     description: 'Oleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up-right',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
 ];
 
@@ -59,7 +62,6 @@ const CardsHomeStyled = styled.section`
   }
   figure {
     background-color: ${({ theme }) => {
-      console.log(theme);
       if (theme === 'dark') {
         return 'var(--white-color)';
       } else {
@@ -100,6 +102,9 @@ const CardsHomeStyled = styled.section`
 const PinturasHome = ({ theme }) => {
   const [idModal, setIdModal] = useState('');
   const [isOpen, isOpenModal, closeModal] = useModal(false);
+
+  const { pathname } = useLocation();
+
   return (
     <CardsHomeSection className={`${theme} section`}>
       <CardsHomeStyled theme={theme} className="container full-lg-screen">
@@ -120,6 +125,7 @@ const PinturasHome = ({ theme }) => {
           dbHome={initialDbHome}
           closeModal={closeModal}
           isOpen={isOpen}
+          pathname={pathname}
         />
       )}
     </CardsHomeSection>

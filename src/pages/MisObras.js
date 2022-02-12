@@ -18,6 +18,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 50 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -26,6 +27,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -34,6 +36,7 @@ const initialDbMisObras = [
     description: 'Oleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -42,6 +45,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -50,6 +54,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -58,6 +63,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -66,6 +72,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -74,6 +81,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -82,6 +90,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -90,6 +99,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -98,6 +108,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -106,6 +117,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -114,6 +126,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -122,6 +135,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -130,6 +144,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -138,6 +153,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -146,6 +162,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -154,6 +171,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 90 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -162,6 +180,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 50 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -170,6 +189,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -178,6 +198,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -186,6 +207,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -194,6 +216,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -202,6 +225,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -210,6 +234,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -218,6 +243,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -226,6 +252,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -234,6 +261,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -242,6 +270,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -250,6 +279,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 50 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -258,6 +288,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -266,6 +297,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -274,6 +306,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -282,6 +315,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -290,6 +324,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 50 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -298,6 +333,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -306,6 +342,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -314,6 +351,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -322,6 +360,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -330,6 +369,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -338,6 +378,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -346,6 +387,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -354,6 +396,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -362,6 +405,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -370,6 +414,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 60 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -378,6 +423,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -386,6 +432,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 50 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -394,6 +441,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -402,6 +450,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 60 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -410,6 +459,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 80 x 70 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -418,6 +468,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 90 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
   {
     id: uuidv4(),
@@ -426,6 +477,7 @@ const initialDbMisObras = [
     description: 'Óleo sobre tela. 70 x 80 cm',
     animateOnScroll: 'fade-up',
     animateonScrollDuration: '3000',
+    altTitle: 'Cuadro al óleo de Adriana Stigliano',
   },
 ];
 

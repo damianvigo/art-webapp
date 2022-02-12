@@ -188,9 +188,6 @@ const Btn = ({
   txt,
   route,
 }) => {
-  console.log(topBtn);
-  console.log(route);
-
   return (
     <>
       <Link

@@ -44,7 +44,12 @@ const ExpoCards = ({ dbExpo, isOpenModal, setIdModalExpo }) => {
                 data-aos-easing={el.easing}
                 data-aos-duration={el.duration}
               >
-                <img className="card-gallery-img" src={el.img} alt="" />
+                <img
+                  className="card-gallery-img"
+                  src={el.img}
+                  title={el.titleCard}
+                  alt={el.altTitle}
+                />
                 <div className="description-mobile">
                   <h2>{el.titleCard}</h2>
                   <small>{el.description}</small>

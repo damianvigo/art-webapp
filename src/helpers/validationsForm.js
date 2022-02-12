@@ -5,26 +5,25 @@ export const validationsForm = (form) => {
   let regexComments = /^.{1,255}$/;
 
   if (!form.name.trim()) {
-    errors.name = "El campo 'Nombre' es requerido";
+    errors.name = 'El Nombre es requerido';
   } else if (!regexName.test(form.name.trim())) {
-    errors.name = "El campo 'Nombre' solo acepta letras y espacios en blanco";
+    errors.name = 'El Nombre solo acepta letras y espacios en blanco';
   }
 
   if (!form.email.trim()) {
-    errors.email = "El campo 'Email' es requerido";
+    errors.email = 'El Email es requerido';
   } else if (!regexEmail.test(form.email.trim())) {
-    errors.email = "El campo 'Email' es incorrecto";
+    errors.email = 'El Email es incorrecto';
   }
 
   if (!form.subject.trim()) {
-    errors.subject = "El campo 'Asunto a tratar' es requerido";
+    errors.subject = 'El Asunto a tratar es requerido';
   }
 
   if (!form.comments.trim()) {
-    errors.comments = "El campo 'Comentarios' es requerido";
+    errors.comments = 'El Comentario es requerido';
   } else if (!regexComments.test(form.comments.trim())) {
-    errors.comments =
-      "El campo 'Comentarios' no debe exceder los 255 caracteres";
+    errors.comments = 'El Comentario no debe exceder los 255 caracteres';
   }
 
   return errors;

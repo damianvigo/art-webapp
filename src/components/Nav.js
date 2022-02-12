@@ -69,12 +69,6 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
 
   const path = useLocation();
   const { pathname } = path;
-  console.log(pathname);
-
-  /* useEffect(() => {
-    const { pathname } = path;
-    console.log(pathname);
-  }, [path]); */
 
   return (
     <NavStyled ref={btnMenu} className={`${showNavMenu && 'is-active'}`}>

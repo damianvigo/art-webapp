@@ -25,7 +25,7 @@ const ModalStyled = styled.article`
 const ModalBox = styled.article`
   img {
     width: 100%;
-    max-height: 80vh;
+    max-height: 70vh;
   }
 `;
 
@@ -39,7 +39,7 @@ const ModalContainer = styled.div`
   overflow-y: auto;
   background-color: var(--white-color);
   @media screen and (min-width: 992px) {
-    max-width: 900px;
+    max-width: 800px;
   }
 `;
 
@@ -65,6 +65,7 @@ const Modal = ({
   idModal,
   dbExpo,
   idModalExpo,
+  pathname,
 }) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
   const [modalCard, setModalCard] = useState();
@@ -85,6 +86,7 @@ const Modal = ({
   return (
     <ModalStyled className={`${isOpen && 'is-open'}`} onClick={closeModal}>
       <ModalContainer
+        pathname={pathname}
         className={`${theme} modal-container`}
         onClick={handleModalContainerClick}
       >

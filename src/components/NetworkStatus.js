@@ -29,14 +29,13 @@ const NetworkStatus = ({ network, conect, up, down }) => {
   const [isOnline] = useNetworkStatus();
 
   useEffect(() => {
+    const $loss = document.getElementById('btn-showNetwork');
     if (isOnline === 'online') {
-      const $loss = document.getElementById('btn-showNetwork');
       $loss.classList.add('is-active');
       setTimeout(() => {
         $loss.classList.remove('is-active');
       }, 3000);
     } else if (isOnline === 'offline') {
-      const $loss = document.getElementById('btn-showNetwork');
       $loss.classList.add('is-active');
       setTimeout(() => {
         $loss.classList.remove('is-active');

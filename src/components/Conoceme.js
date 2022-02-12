@@ -87,8 +87,11 @@ const Conoceme = ({ theme, resplandor, avatar }) => {
             Me llamo Adriana Stigliano y soy de Buenos Aires Argentina.
           </p>
           <p className="conoceme-description text-right">
-            Pinto al óleo y al acrílico. Mi temática es variada realizo
-            paisajes, retratos, marinas y abstractos.
+            <strong>
+              {' '}
+              Pinto al óleo y al acrílico. Mi temática es variada realizo
+              paisajes, retratos, marinas y abstractos.
+            </strong>
           </p>
           <p className="text-right">
             Amo pintar y lo hago en mi taller y también en espacios libres, para
@@ -102,10 +105,18 @@ const Conoceme = ({ theme, resplandor, avatar }) => {
         >
           <FlipCard>
             <FlipFace>
-              <img src={avatar} alt="Adriana Stigliano" />
+              <img
+                src={avatar}
+                alt="Adriana Stigliano"
+                title="Adriana Stigliano"
+              />
             </FlipFace>
             <FlipFace>
-              <img src={resplandor} alt="Adriana Stigliano" />
+              <img
+                src={resplandor}
+                alt="Cuadro abstracto al óleo de Adriana Stigliano"
+                title="Resplandor"
+              />
             </FlipFace>
           </FlipCard>
         </article>
@@ -116,17 +127,21 @@ const Conoceme = ({ theme, resplandor, avatar }) => {
           data-aos-duration="1000"
         >
           <p>
-            Trabaje toda mi vida como docente. Estuve en la escuela de Bellas
-            Artes General Urquiza.
+            <strong>
+              Trabajé toda mi vida como docente. Estuve en la escuela de Bellas
+              Artes General Urquiza.
+            </strong>
           </p>
           <p>
             En ella realicé proyectos de arte vinculados a la formación de niños
             y adultos
           </p>
           <p>
-            Siempre me gustó dibujar y por tal motivo concurrí a diferentes
-            seminarios de arte, donde aprendí la técnica del óleo y pintura
-            hiperrealista.
+            <strong>
+              Siempre me gustó dibujar y por tal motivo concurrí a diferentes
+              seminarios de arte, donde aprendí la técnica del óleo y pintura
+              hiperrealista.
+            </strong>
           </p>
           <p>
             En la actualidad continúo con la actividad artística y expongo en

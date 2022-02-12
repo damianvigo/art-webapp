@@ -6,6 +6,7 @@ const CardsMisObras = ({ el, isOpenModal, setIdModal }) => {
     description,
     animateOnScroll,
     animateonScrollDuration,
+    altTitle,
   } = el;
 
   return (
@@ -16,7 +17,12 @@ const CardsMisObras = ({ el, isOpenModal, setIdModal }) => {
         className="box-shadow-card"
       >
         <figure onClick={isOpenModal}>
-          <img onClick={() => setIdModal(id)} src={img} alt="" />
+          <img
+            onClick={() => setIdModal(id)}
+            src={img}
+            title={titleCard}
+            alt={altTitle}
+          />
         </figure>
         <h2>{titleCard}</h2>
         <p>{description}</p>

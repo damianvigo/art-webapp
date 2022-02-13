@@ -30,6 +30,8 @@ const HeroImageOpacity = styled.aside`
 const HeroImageTitle = styled.h1`
   color: var(--white-color);
   font-weight: 900;
+  padding: 1rem;
+  border-radius: 1rem;
 `;
 
 const HeroImageSubtitle = styled.h2`

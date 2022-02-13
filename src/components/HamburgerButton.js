@@ -11,7 +11,7 @@ const HamburgerButtonStyled = styled.button`
   }
 
   .hamburger-box {
-    height: 0;
+    height: 6px;
   }
 
   @media screen and (min-width: 1024px) {

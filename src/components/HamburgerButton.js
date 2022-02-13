@@ -8,11 +8,10 @@ const HamburgerButtonStyled = styled.button`
   .hamburger.is-active .hamburger-inner:after,
   .hamburger.is-active .hamburger-inner:before {
     background-color: var(--first-color) !important;
-    height: 4px;
   }
 
   .hamburger-box {
-    height: 4px;
+    height: 6px;
   }
 
   @media screen and (min-width: 1024px) {

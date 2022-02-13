@@ -90,15 +90,11 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
         </NavLink>
       )}
 
-      {/*   <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
-        Conoceme
-      </NavLink> */}
-
       <NavLink
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/mis-obras"
         onClick={() =>
-          pathname === '/mis-obras' ? setChangeBtn(!showChangeBtn) : null
+          pathname === '/mis-obras' ? setChangeBtn(!showChangeBtn) : false
         }
       >
         Mis obras
@@ -107,7 +103,7 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/exposiciones"
         onClick={() =>
-          pathname === '/exposiciones' ? setChangeBtn(!showChangeBtn) : null
+          pathname === '/exposiciones' ? setChangeBtn(!showChangeBtn) : false
         }
       >
         Exposiciones
@@ -116,7 +112,7 @@ const Nav = ({ showNavMenu, showChangeBtn, setChangeBtn }) => {
         className={({ isActive }) => (isActive ? 'active' : '')}
         to="/contacto"
         onClick={() =>
-          pathname === '/contacto' ? setChangeBtn(!showChangeBtn) : null
+          pathname === '/contacto' ? setChangeBtn(!showChangeBtn) : false
         }
       >
         Contacto

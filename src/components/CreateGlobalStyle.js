@@ -121,6 +121,7 @@ p {
 }
 
 p::selection,
+strong::selection,
 span::selection,
 b::selection,
 h1::selection,

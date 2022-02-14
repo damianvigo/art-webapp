@@ -19,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   --third-alpha-color: #c77dff45;
   --white-color: #fff; // usando
   --black-color: #000;
+  --dark-color: #1f1f1f;
+  --light-color #EEEEEE;
   --link-color: #240046;
   --title-color: #333;
   --text-color: #222; // usando
@@ -34,8 +36,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 .dark {
-  background-color: #1f1f1f;
-  color: #EEEEEE;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   transition: all 0.3s ease-in;
 }
 

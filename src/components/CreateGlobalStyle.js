@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   --white-color: #fff; // usando
   --black-color: #000;
   --dark-color: #1f1f1f;
-  --light-color #EEEEEE;
+  --light-color: #EEEEEE;
   --link-color: #240046;
   --title-color: #333;
   --text-color: #222; // usando

@@ -40,7 +40,7 @@ const CardsHomeSection = styled.section`
 
 const ContainerBtn = styled.div`
   text-align: center;
-  padding: 4rem;
+  padding: 4rem 0;
 `;
 
 const CardsHomeStyled = styled.section`

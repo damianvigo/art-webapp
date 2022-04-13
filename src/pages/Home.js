@@ -18,7 +18,7 @@ const Home = ({ theme }) => {
     <>
       <Header />
       <Helmet>
-        <title>Bienvenida/o</title>
+        <title>Arte Adriana Stigliano</title>
       </Helmet>
       <main>
         <HeroImage

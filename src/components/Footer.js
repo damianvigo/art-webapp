@@ -95,7 +95,7 @@ const Footer = ({ theme }) => {
             <SvgFacebook />
             <SvgInstagram />
           </div>
-          <p>Adriana Stigliano © 2022 </p>
+          <p>Adriana Stigliano © {new Date().getFullYear()}</p>
         </ContainerIcons>
       </article>
       <ArticleSvg>

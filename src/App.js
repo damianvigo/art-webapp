@@ -49,11 +49,11 @@ function App() {
         <link
           rel="icon"
           type="image/x-icon"
-          href={`https://adrianastigliano.art${ico}`}
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
         />
         <link
           rel="apple-touch-icon"
-          href={`https://adrianastigliano.art${ico}`}
+          href={`https://adrianastiglianoarte.netlify.app${ico}`}
         />
         <meta name="title" content="Artista Plástica | Adriana Stigliano" />
         <meta
